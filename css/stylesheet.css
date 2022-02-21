@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Below is the custom fonts I used as well as all the elements I implemented them on.*/
+@font-face { font-family: Staatliches; src: url('Staatliches.ttf'); }
+@font-face { font-family: Ubuntu-Light; src: url('Ubuntu-Light.ttf'); }
+
+h1 {
+    font-family: Staatliches, sans-serif;
+    text-transform: uppercase;
+    font-size: 350%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: Staatliches, sans-serif;
+    text-transform: uppercase;
+    font-size: 200%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: Staatliches, sans-serif;
+    text-transform: uppercase;
+    font-size: 145%;
+}
+
+h4 {
+    font-family: Staatliches, sans-serif;
+    text-transform: uppercase;
+    font-size: 135%;
+    margin-left: 10px;
+}
+
+body {
+    font-family: Ubuntu-Light;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    font-size: 125%;
+}
+
+/*Below is the styling for the header and its contents.*/
+header {
+    background-color: #2D4030;
+    color: #FFFFFF;
+    padding: 0.5%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    background-image: url("../images/plant-background.png");
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: space-around;
+}
+
+#headshot {
+    width: auto;
+    height: auto;
+}
+
+.profile-headshot {
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+#name {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#contact {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+#contact dd {
+    margin-left: 0%;
+}
+
+.contact-icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*Below is the styling for the main body as well as the side bar and their contents.*/
+main {
+    background-color: #FFFFFF;
+    width: auto;
+    height: auto;
+    background-image: url("../images/plant-line-art.png");
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 95%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.content {
+    border: 0.5px solid #000000;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.content p {
+    margin-left: 40px;
+}
+
+[href] {
+    color: #325364;
+    text-decoration: underline;
+    background: transparent;
+}
+
+[href]:hover {
+    opacity: 85%;
+}
+
+.sidebar {
+    background-color: #7BB376;
+    width: auto;
+    height: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+/*Below is the styling for the footer and its contents.*/
+footer {
+    background-color: #2D4030;
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url("../images/plant-background.png");
+    width: auto;
+    height: auto;
+}
+
+#social {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.social-icons:hover {
+    box-shadow: 0 5px 15px #FFFFFF;
+    border-radius: 50px;
+}
