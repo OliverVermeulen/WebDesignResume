@@ -102,9 +102,6 @@ main {
     background-repeat: no-repeat;
     background-position-x: 75%;
     background-position-y: 95%;
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
 }
 
 .content {
@@ -139,6 +136,10 @@ main {
     height: auto;
     padding-left: 14px;
     padding-right: 14px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: space-around;
 }
 
 .sidebar h2 {
