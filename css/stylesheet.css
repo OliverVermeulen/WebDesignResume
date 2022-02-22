@@ -95,8 +95,9 @@ header {
 
 @media only screen and (max-width: 600px) {
     header {
-      flex-direction: column;
-      background-image: url("../images/plant-background-alt.png");
+        background-image: url("../images/plant-background.png");
+        background-size: cover;
+        flex-direction: column;
     }
     #contact h2 {
         text-align: center;
@@ -114,12 +115,6 @@ main {
     background-position-y: 95%;
 }
 
-@media only screen and (max-width: 600px) {
-    main {
-      text-align: center;
-    }
-}
-
 .sidebar {
     background-color: #7BB376;
     width: auto;
@@ -130,12 +125,6 @@ main {
     flex-direction: row;
     overflow: auto;
     justify-content: space-around;
-}
-
-@media only screen and (max-width: 600px) {
-    .sidebar {
-      flex-wrap: wrap;
-    }
 }
 
 .content {
@@ -165,6 +154,24 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
+    main {
+        background-image: url("../images/plant-line-art.png");
+        background-size: 100px;
+        background-position-x: 75%;
+        background-position-y: 4100px;
+    }
+    .sidebar {
+        flex-wrap: wrap;
+      }
+    .content h2 {
+        text-align: center;
+    }
+    .content h3 {
+        text-align: center;
+    }
+    .content h4 {
+        text-align: center;
+    }
     .content p {
         margin-left: 0%;
     }
