@@ -59,12 +59,6 @@ header {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px) {
-    header {
-      flex-direction: column;
-    }
-  }
-
 #headshot {
     width: auto;
     height: auto;
@@ -99,6 +93,16 @@ header {
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      background-image: url("../images/plant-background-alt.png");
+    }
+    #contact h2 {
+        text-align: center;
+    }
+}
+
 /*Below is the styling for the navigation bar as well as the main body and their contents.*/
 main {
     background-color: #FFFFFF;
@@ -114,7 +118,7 @@ main {
     main {
       text-align: center;
     }
-  }
+}
 
 .sidebar {
     background-color: #7BB376;
@@ -132,7 +136,7 @@ main {
     .sidebar {
       flex-wrap: wrap;
     }
-  }
+}
 
 .content {
     border: 0.5px solid #000000;
@@ -158,6 +162,15 @@ main {
 
 [href]:hover {
     opacity: 85%;
+}
+
+@media only screen and (max-width: 600px) {
+    .content p {
+        margin-left: 0%;
+    }
+    .content dd {
+      margin-left: 0%;
+    }
 }
 
 /*Below is the styling for the footer and its contents.*/
