@@ -59,56 +59,13 @@ header {
     justify-content: space-around;
 }
 
-@media screen and (max-width="500px") {
-    header{
-        background-color: #2D4030;
-        color: #FFFFFF;
-        padding: 0.5%;
-        width: auto;
-        height: auto;
-        align-items: center;
-        background-image: url("../images/plant-background.png");
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
+@media only screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
     }
-}
+  }
 
 #headshot {
-    width: 30%;
-    height: auto;
-}
-
-.profile-headshot {
-    border: 5px solid #FFFFFF;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
-
-#name {
-    width: 30%;
-    height: auto;
-    text-align: center;
-}
-
-#contact {
-    width: 30%;
-    height: auto;
-    text-align: left;
-}
-
-#contact dd {
-    margin-left: 0%;
-}
-
-.contact-icons {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-/*#headshot {
     width: auto;
     height: auto;
 }
@@ -140,7 +97,7 @@ header {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-}*/
+}
 
 /*Below is the styling for the navigation bar as well as the main body and their contents.*/
 main {
@@ -153,6 +110,12 @@ main {
     background-position-y: 95%;
 }
 
+@media only screen and (max-width: 600px) {
+    main {
+      text-align: center;
+    }
+  }
+
 .sidebar {
     background-color: #7BB376;
     width: auto;
@@ -164,6 +127,12 @@ main {
     overflow: auto;
     justify-content: space-around;
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      flex-wrap: wrap;
+    }
+  }
 
 .content {
     border: 0.5px solid #000000;
