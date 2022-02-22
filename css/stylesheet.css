@@ -93,7 +93,7 @@ header {
     margin-right: 10px;
 }
 
-/*Below is the styling for the main body as well as the side bar and their contents.*/
+/*Below is the styling for the navigation bar as well as the main body and their contents.*/
 main {
     background-color: #FFFFFF;
     width: auto;
@@ -102,6 +102,18 @@ main {
     background-repeat: no-repeat;
     background-position-x: 75%;
     background-position-y: 95%;
+}
+
+.sidebar {
+    background-color: #7BB376;
+    width: auto;
+    height: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: space-around;
 }
 
 .content {
@@ -128,22 +140,6 @@ main {
 
 [href]:hover {
     opacity: 85%;
-}
-
-.sidebar {
-    background-color: #7BB376;
-    width: auto;
-    height: auto;
-    padding-left: 14px;
-    padding-right: 14px;
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    justify-content: space-around;
-}
-
-.sidebar h2 {
-    text-align: center;
 }
 
 /*Below is the styling for the footer and its contents.*/
