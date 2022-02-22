@@ -99,7 +99,17 @@ header {
         background-size: cover;
         flex-direction: column;
     }
+    #name h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #name h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     #contact h2 {
+        margin-top: 15px;
+        margin-bottom: 20px;
         text-align: center;
     }
 }
@@ -155,7 +165,7 @@ main {
 
 @media only screen and (max-width: 600px) {
     main {
-        background-image: url("../images/plant-line-art.png");
+        background-image: url("../images/plant-line-art-alt-removebg-preview.png");
         background-size: 100px;
         background-position-x: 75%;
         background-position-y: 4100px;
