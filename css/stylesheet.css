@@ -7,6 +7,28 @@
 @font-face { font-family: Staatliches; src: url('Staatliches.ttf'); }
 @font-face { font-family: Ubuntu-Light; src: url('Ubuntu-Light.ttf'); }
 
+.theme-light {
+    --color-primary: #7BB376;
+    --color-secondary: #fbfbfe;
+    --heading-color: #ffffff;
+    --font-color: #000000;
+    --link-color: #325364;
+    --picture-color: url("../images/plant-background.png");
+    --body-picture-color: url("../images/plant-line-art.png");
+    --icon-color: brightness(100%);
+  }
+  
+.theme-dark {
+    --color-primary: #b1640d;
+    --color-secondary: #282a36;
+    --heading-color: #ccc;
+    --font-color: #ccc;
+    --link-color: #ffffff;
+    --picture-color: url("../images/plant-background-dark.png");
+    --body-picture-color: url("../images/plant-line-art-dark.png");
+    --icon-color: brightness(80%);
+  }
+
 h1 {
     font-family: Staatliches, sans-serif;
     text-transform: uppercase;
