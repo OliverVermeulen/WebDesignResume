@@ -15,19 +15,21 @@
     --link-color: #325364;
     --picture-color: url("../images/plant-background.png");
     --body-picture-color: url("../images/plant-line-art.png");
+    --mobile-picture-color: url("../images/mobile-plant-line-art.png");
     --icon-color: brightness(100%);
-  }
-  
+}
+
 .theme-dark {
     --color-primary: #b1640d;
     --color-secondary: #282a36;
     --heading-color: #ccc;
     --font-color: #ccc;
     --link-color: #ffffff;
-    --picture-color: url("../images/plant-background-dark.png");
+    --picture-color: url("../images/plant-background-dark.jpg");
     --body-picture-color: url("../images/plant-line-art-dark.png");
+    --mobile-picture-color: url("../images/mobile-plant-line-art-dark.png");
     --icon-color: brightness(80%);
-  }
+}
 
 h1 {
     font-family: Staatliches, sans-serif;
@@ -60,8 +62,8 @@ h4 {
 
 body {
     font-family: Ubuntu-Light;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: var(--font-color);
+    color: var(--font-color);
     margin: 0;
     font-size: 125%;
 }
@@ -69,12 +71,13 @@ body {
 /*Below is the styling for the header and its contents.*/
 header {
     background-color: #2D4030;
-    color: #FFFFFF;
+    color: var(--heading-color);
     padding: 0.5%;
     width: auto;
     height: auto;
     align-items: center;
-    background-image: url("../images/plant-background2.png");
+    background-image: var(--picture-color);
+    transition: all 0.9s;
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -87,7 +90,7 @@ header {
 }
 
 .profile-headshot {
-    border: 5px solid #FFFFFF;
+    border: 5px solid var(--heading-color);
     border-radius: 50%;
     width: 250px;
     height: 250px;
@@ -113,12 +116,13 @@ header {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    filter: var(--icon-color);
 }
 
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url("../images/plant-background2.png");
+        background-image: var(--picture-color);
         background-size: cover;
         flex-direction: column;
     }
@@ -139,21 +143,22 @@ header {
 
 /*Below is the styling for the navigation bar as well as the main body and their contents.*/
 main {
-    background-color: #FFFFFF;
+    background-color: var(--color-secondary);
     width: auto;
     height: auto;
-    background-image: url("../images/plant-line-art.png");
+    background-image: var(--body-picture-color);
     background-repeat: no-repeat;
     background-position-x: 75%;
     background-position-y: 95%;
 }
 
 .sidebar {
-    background-color: #7BB376;
+    background-color: var(--color-primary);
     width: auto;
     height: auto;
     padding-left: 14px;
     padding-right: 14px;
+    transition: all 0.9s;
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -166,7 +171,7 @@ main {
 }
 
 .content {
-    border: 0.5px solid #000000;
+    border: 0.5px solid var(--font-color);
     border-radius: 20px;
     width: auto;
     height: auto;
@@ -175,6 +180,7 @@ main {
     margin-bottom: 20px;
     margin-left: 60px;
     margin-right: 60px;
+    transition: all 0.9s;
 }
 
 .content p {
@@ -182,7 +188,7 @@ main {
 }
 
 [href] {
-    color: #325364;
+    color: var(--link-color);
     text-decoration: underline;
     background: transparent;
 }
@@ -194,7 +200,7 @@ main {
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     main {
-        background-image: url("../images/plant-line-art-alt-removebg-preview.png");
+        background-image: var(--mobile-picture-color);
         background-size: 100px;
         background-position-x: 75%;
         background-position-y: 4050px;
@@ -225,11 +231,12 @@ main {
 /*Below is the styling for the footer and its contents.*/
 footer {
     background-color: #2D4030;
-    color: #FFFFFF;
+    color: var(--heading-color);
     text-align: center;
-    background-image: url("../images/plant-background2.png");
+    background-image: var(--picture-color);
     width: auto;
     height: auto;
+    transition: all 0.9s;
 }
 
 #social {
@@ -241,6 +248,7 @@ footer {
     width: 50px;
     height: 50px;
     margin: 5px;
+    filter: var(--icon-color);
 }
 
 .social-icons:hover {
