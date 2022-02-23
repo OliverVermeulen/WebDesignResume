@@ -137,6 +137,11 @@ main {
     justify-content: space-around;
 }
 
+.sidebar h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .content {
     border: 0.5px solid #000000;
     border-radius: 20px;
@@ -168,7 +173,7 @@ main {
         background-image: url("../images/plant-line-art-alt-removebg-preview.png");
         background-size: 100px;
         background-position-x: 75%;
-        background-position-y: 4100px;
+        background-position-y: 4050px;
     }
     .sidebar {
         flex-wrap: wrap;
@@ -187,6 +192,9 @@ main {
     }
     .content dd {
       margin-left: 0%;
+    }
+    [href]:hover {
+        opacity: 100%;
     }
 }
 
@@ -214,4 +222,10 @@ footer {
 .social-icons:hover {
     box-shadow: 0 5px 15px #FFFFFF;
     border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .social-icons:hover {
+        box-shadow: none;
+    }
 }
