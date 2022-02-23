@@ -93,6 +93,7 @@ header {
     margin-right: 10px;
 }
 
+/*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     header {
         background-image: url("../images/plant-background2.png");
@@ -168,6 +169,7 @@ main {
     opacity: 85%;
 }
 
+/*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     main {
         background-image: url("../images/plant-line-art-alt-removebg-preview.png");
@@ -224,6 +226,7 @@ footer {
     border-radius: 50px;
 }
 
+/*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     .social-icons:hover {
         box-shadow: none;
