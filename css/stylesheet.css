@@ -52,7 +52,7 @@ header {
     width: auto;
     height: auto;
     align-items: center;
-    background-image: url("../images/plant-background.png");
+    background-image: url("../images/plant-background2.png");
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -95,7 +95,7 @@ header {
 
 @media only screen and (max-width: 600px) {
     header {
-        background-image: url("../images/plant-background.png");
+        background-image: url("../images/plant-background2.png");
         background-size: cover;
         flex-direction: column;
     }
@@ -195,7 +195,7 @@ footer {
     background-color: #2D4030;
     color: #FFFFFF;
     text-align: center;
-    background-image: url("../images/plant-background.png");
+    background-image: url("../images/plant-background2.png");
     width: auto;
     height: auto;
 }
