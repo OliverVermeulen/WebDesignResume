@@ -13,179 +13,164 @@
   <script src="./script/localstorage.js"></script>
 </head>
 
-  <body>
-    <!--The section below contains my profile picture, my name and personal statement as well as my contact details.-->
-    <header>
-      <div id="headshot">
-        <picture>
-          <source media="(max-width: 600px)" srcset="./images/oliver-profile-headshot-small.png">
-          <source media="(max-width: 1000px)" srcset="./images/oliver-profile-headshot-medium.png">
-          <source srcset="./images/oliver-profile-headshot.jpg">
-          <img class="profile-headshot" src="./images/oliver-profile-headshot.jpg" alt="Oliver's profile photo"/>
-        </picture>
-      </div>
+<body>
+  <!--The section below contains my profile picture, my name and personal statement as well as my contact details.-->
+  <header>
+    <div id="headshot">
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/oliver-profile-headshot-small.png">
+        <source media="(max-width: 1000px)" srcset="./images/oliver-profile-headshot-medium.png">
+        <source srcset="./images/oliver-profile-headshot.jpg">
+        <img class="profile-headshot" src="./images/oliver-profile-headshot.jpg" alt="Oliver's profile photo"/>
+      </picture>
+    </div>
 
-      <div id="name">
-        <h1>Oliver Vermeulen</h1>
-          <h2>Software Engineer</h2>
-      </div>
+    <div id="name">
+      <h1>Oliver Vermeulen</h1>
+        <h2>Software Engineer</h2>
+    </div>
 
-      <div id="contact">
-          <h2>Contact:</h2>
-            <dl>
-                <dd><address><img class="contact-icons" src="./images/email-icon.png" alt="Email icon"/>Email: oliververmeulen862@gmail.com</address></dd>
-                <dd><address><img class="contact-icons" src="./images/phone-icon.png" alt="Phone icon"/>Cellphone: (+27) 83 410 5243</address></dd>
-                <dd><address><img class="contact-icons" src="./images/location-icon.png" alt="Location icon"/>Location: Riversdale, South Africa, 6670</address></dd>
-            </dl>  
-      </div>
-    </header>
+    <div id="contact">
+        <h2>Contact:</h2>
+        <dl>
+          <dd><address><img class="contact-icons" src="./images/email-icon.png" alt="Email icon"/>Email: oliververmeulen862@gmail.com</address></dd>
+          <dd><address><img class="contact-icons" src="./images/phone-icon.png" alt="Phone icon"/>Cellphone: (+27) 83 410 5243</address></dd>
+          <dd><address><img class="contact-icons" src="./images/location-icon.png" alt="Location icon"/>Location: Riversdale, South Africa, 6670</address></dd>
+        </dl>  
+    </div>
+  </header>
 
-    <nav class="sidebar">
-              <h3 id="box1"><a href="#introduction">Introduction</a></h3>
-              <h3 id="box2"><a href="#education">Education</a></h3>
-              <h3 id="box3"><a href="#experience">Experience</a></h3>
-              <h3 id="box4"><a href="#stats">Stats</a></h3>
-              <h3 id="box5"><a href="#social">Social</a></h3>
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" onclick="toggleTheme()"/>
-                <div class="slider round"></div>  
-                </label>
-              </div>
-      </nav>
+  <nav class="sidebar">
+          <h3 id="box1"><a href="#introduction">Introduction</a></h3>
+          <h3 id="box2"><a href="#education">Education</a></h3>
+          <h3 id="box3"><a href="#experience">Experience</a></h3>
+          <h3 id="box4"><a href="#stats">Stats</a></h3>
+          <h3 id="box5"><a href="#social">Social</a></h3>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" onclick="toggleTheme()"/>
+    <div class="slider round"></div></label>
+    </div>
+  </nav>
 
-    <!--The section below contains a section about myself, my education and experience. It also includes a sidebar that contains a menu, my skills, the languages I speak and my interests.-->
-    <main>
-      <div>
-      <div class="content">
-          <h2 id="introduction">Introduction:</h2>
-                <p>Aspiring Software Engineer with an eye for detail. Equally comfortable with teamwork and working by myself. Looking for a diverse workplace with lots opportunities for growth and creativity. Always willing to learn new technologies, and  I own at least five Hawaiian shirts at any given time.</p>
-      </div>
+  <!--The section below contains a section about myself, my education and experience. It also includes a sidebar that contains a menu, my skills, the languages I speak and my interests.-->
+  <main>
+    <div>
+    <div class="content">
+        <h2 id="introduction">Introduction:</h2>
+          <p>Aspiring Software Engineer with an eye for detail. Equally comfortable with teamwork and working by myself. Looking for a diverse workplace with lots opportunities for growth and creativity. Always willing to learn new technologies, and  I own at least five Hawaiian shirts at any given time.</p>
+    </div>
 
-      <div class="content">
-          <h2 id="education">Education:</h2>
-            <dl>
-              <h3><a href="https://www.codespace.co.za/" target="_blank">CodeSpace</a> | Current</h3>
-              <dt><h4>Intro to Web certificate</h4></dt>
-                <dd>With this certificate I learnt the essential languages needed to create basic websites. I used modern HTML5 elements to build up a website and to give it structure. I employed Cascading Style Sheets (CSS) to display my site as a well-designed final product making use of images, fonts and colours.</dd>
-                
-              <h3><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> | 2021</h3>
-              <dt><h4>Learn JavaScript certificate</h4></dt>
-                <dd>For this certificate, I learned how to use JavaScript programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax, and learnt to use its many elements; including Bash terminals and node.js to create small projects.</dd>
-                
-              <dt><h4>Learn HTML certificate</h4></dt>
-                <dd>During this course I learned how to use HTML5, including all the common HTML tags and how to create HTML tables to present tabular data efficiently. I completed quizzes based on this and I received a certificate of completion.</dd>
-              
-              <h3><a href="https://langenhovenhs.co.za/" target="_blank">Langenhoven High School</a> | 2016-2020</h3>
-              <dt><h4>National Senior Certificate</h4></dt>
-                <dd>From 2016 to 2020 I attended Langenhoven High School in Riversdale and after matriculating in 2020 I received my National Senior Certificate.</dd> 
-                <dd>Relevant subjects: CAT(Computer Applications and Technology), EGD(Engineering Graphics and Design), Mathematical Literacy, English and Afrikaans.</dd>
-                <dd>Received a distinction for Mathematical Literacy.</dd>
-            </dl>
-      </div>
+    <div class="content">
+        <h2 id="education">Education:</h2>
+          <h3><a href="https://www.codespace.co.za/" target="_blank">CodeSpace</a> | Current</h3>
+<h4>Intro to Web certificate</h4>
+<p>With this certificate I learnt the essential languages needed to create basic websites. I used modern HTML5 elements to build up a website and to give it structure. I employed Cascading Style Sheets (CSS) to display my site as a well-designed final product making use of images, fonts and colours.</p>
 
-      <div class="content">
-          <h2 id="experience">Experience:</h2>
-              <h3>Indivdual project contributor on Github</h3>
-              <ul>
-                <li>Took part in Hacktoberfest 2020 and 2021</li>
-                <li>Helped on the Covid-19 expenditure report in 2020</li>
-                <li>Contributed on several smaller projects</li>
-                <li>Furthering the cause for open source code</li>
-              </ul>
+          <h3><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> | 2021</h3>
+            <h4>Learn JavaScript certificate</h4>
+              <p>For this certificate, I learned how to use JavaScript programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax, and learnt to use its many elements; including Bash terminals and node.js to create small projects.</p>
 
-              <h3>Companies where I have done job shadowing:</h3>
-              <ul>
-                <li>Experian (formerly Compuscan)</li>
-                <li>Pioneer Foods</li>
-                <li>Cape Heart</li>
-                <li>Booking.com</li>
-              </ul>
-      </div>
+            <h4>Learn HTML certificate</h4>
+              <p>During this course I learned how to use HTML5, including all the common HTML tags and how to create HTML tables to present tabular data efficiently. I completed quizzes based on this and I received a certificate of completion.</p>
 
-      <div class="content">
-          <h2 id="stats">Stats</h2>
-              <h3>Skills:</h3>
-                <ul>
-                  <li>JavaScript</li>
-                  <li>HTML5</li>
-                  <li>CSS</li>
-                  <li>Bash</li>
-                  <li>Node.js</li>
-                  <li>Public speaking</li>
-                  <li>Time management</li>
-                  <li>Can make a mean Vietnamese salad</li>
-                </ul>
-              <h3>Interests:</h3>
-              <ul>
-                <li>PC gaming</li>
-                <li>Reading manga</li>
-                <li>Cooking ramen</li>
-                <li>Warhammer 40K</li>
-                <li>Hiking</li>
-              </ul>
-              <h3>Languages:</h3>
-              <ul>
-                <li>English</li>
-                <li>Afrikaans</li>
-              </ul>
-      </div>
-      
-      <div class="content">
-          <h2>Email</h2>
-          <section class="form-section p-5" id="contact-section">
-            <h2 class="mt-5 mb-4 text-center">Contact Me</h2>
-            <div class="w-50 mx-auto">
-      
-              <form action="post">
-      
-                <div class="form-group row">
-                  <div class="col-md-6 p-2">
-                    <input type="text" class="form-control" placeholder="Full name">
-                  </div>
-      
-                  <div class="col-md-6 p-2">
-                    <input type="email" class="form-control" placeholder="Email Address">
-                  </div>
-                </div>
-      
-                <div class="form-group row">
-                  <div class="col-md-12 p-2">
-                    <input type="text" class="form-control" placeholder="Subject">
-                  </div>
-                </div>
-      
-                <div class="form-group row">
-                  <div class="col-md-12 p-2">
-                    <textarea class="form-control" rows="3" placeholder="Type your message here" style="height: 38px;"></textarea>
-                  </div>
-                </div>
-      
-                <div class="form-group row">
-                  <div class="col-md-12 text-center p-2">
-                    <button type="submit" class="btn btn-primary button-colour">Send Message</button>
-                  </div>
-                </div>
-      
-            </form></div>
-            </div>
-            
-          </section>
-      </div>
-      </div>
-    </main>
+          <h3><a href="https://langenhovenhs.co.za/" target="_blank">Langenhoven High School</a> | 2016-2020</h3>
+            <h4>National Senior Certificate</h4>
+        <ul>
+          <li>From 2016 to 2020 I attended Langenhoven High School in Riversdale and after matriculating in 2020 I received my National Senior Certificate.</li> 
+          <li>Relevant subjects: CAT(Computer Applications and Technology), EGD(Engineering Graphics and Design), Mathematical Literacy, English and Afrikaans.</li>
+          <li>Received a distinction for Mathematical Literacy.</li>
+        </ul>
+    </div>
 
-    <!--The section below contains external links to the social media I use.-->
-    <footer>
-          <h2 id="social">Social:</h2>
-            <a href="https://www.linkedin.com/in/oliver-vermeulen-311221222/" target="_blank">
-              <img class="social-icons" src="./images/linkedin-icon.png" alt="Oliver's Linkedin"/></a>
+<div class="content">
+<h2 id="experience">Experience:</h2>
+<h3>Indivdual project contributor on Github</h3>
+<ul>
+<li>Took part in Hacktoberfest 2020 and 2021</li>
+<li>Helped on the Covid-19 expenditure report in 2020</li>
+<li>Contributed on several smaller projects</li>
+<li>Furthering the cause for open source code</li>
+</ul>
 
-            <a href="https://github.com/OliverVermeulen" target="_blank">
-              <img class="social-icons" src="./images/github-icon.png" alt="Oliver's GitHub"/></a>
+<h3>Companies where I have done job shadowing:</h3>
+<ul>
+<li>Experian (formerly Compuscan)</li>
+<li>Pioneer Foods</li>
+<li>Cape Heart</li>
+<li>Booking.com</li>
+</ul>
+</div>
 
-            <a href="https://www.instagram.com/oliver.vermeulen/" target="_blank">
-              <img class="social-icons" src="./images/instagram-icon.png" alt="Oliver's instagram"/></a>
-    </footer>
-  </body>
+<div class="content">
+<h2 id="stats">Stats</h2>
+<h3>Skills:</h3>
+<ul>
+<li>JavaScript</li>
+<li>HTML5</li>
+<li>CSS</li>
+<li>Bash</li>
+<li>Node.js</li>
+<li>Public speaking</li>
+<li>Time management</li>
+<li>Can make a mean Vietnamese salad</li>
+</ul>
+<h3>Interests:</h3>
+<ul>
+<li>PC gaming</li>
+<li>Reading manga</li>
+<li>Cooking ramen</li>
+<li>Warhammer 40K</li>
+<li>Hiking</li>
+</ul>
+<h3>Languages:</h3>
+<ul>
+<li>English</li>
+<li>Afrikaans</li>
+</ul>
+</div>
+
+<div class="content">
+<h2>Email</h2>
+<section class="form-section p-5" id="contact-section">
+<div class="w-50 mx-auto">
+
+<form action="post">
+<div class="form-group row">
+<div class="col-md-6 p-2"><input type="text" class="form-control" placeholder="Full name"></div>
+<div class="col-md-6 p-2"><input type="email" class="form-control" placeholder="Email Address"></div>
+</div>
+
+<div class="form-group row">
+<div class="col-md-12 p-2"><input type="text" class="form-control" placeholder="Subject"></div>
+</div>
+
+<div class="form-group row">
+<div class="col-md-12 p-2"><textarea class="form-control" rows="3" placeholder="Type your message here" style="height: 38px;"></textarea></div>
+</div>
+
+<div class="form-group row">
+<div class="col-md-12 text-center p-2"><button type="submit" class="btn btn-primary button-colour">Send Message</button></div>
+</div>
+</form>
+</div>
+</section>
+</div>
+
+</div>
+</main>
+
+<!--The section below contains external links to the social media I use.-->
+<footer>
+<h2 id="social">Social:</h2>
+<a href="https://www.linkedin.com/in/oliver-vermeulen-311221222/" target="_blank">
+<img class="social-icons" src="./images/linkedin-icon.png" alt="Oliver's Linkedin"/></a>
+
+<a href="https://github.com/OliverVermeulen" target="_blank">
+<img class="social-icons" src="./images/github-icon.png" alt="Oliver's GitHub"/></a>
+
+<a href="https://www.instagram.com/oliver.vermeulen/" target="_blank">
+<img class="social-icons" src="./images/instagram-icon.png" alt="Oliver's instagram"/></a>
+</footer>
+</body>
 </html>
