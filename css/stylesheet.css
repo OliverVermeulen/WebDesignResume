@@ -3,6 +3,7 @@
     scroll-behavior: smooth;
 }
 
+/*Below are my variable color schemes.*/
 .theme-light {
     --picture-color: url("../images/plant-background.png");
     --heading-color: #ffffff;
@@ -27,10 +28,19 @@
     --icon-color: brightness(80%);
 }
 
-/*Below is the custom fonts I used as well as all the elements I implemented them on.*/
-@font-face { font-family: Staatliches; src: url('Staatliches.ttf'); }
-@font-face { font-family: Ubuntu-Light; src: url('Ubuntu-Light.ttf'); }
+/*Below is the custom fonts I used.*/
+@font-face { 
+    font-family: Staatliches; 
+    src: url('Staatliches.ttf');
+    font-display: swap; 
+}
+@font-face { 
+    font-family: Ubuntu-Light; 
+    src: url('Ubuntu-Light.ttf');
+    font-display: swap; 
+}
 
+/*Below is the styling for my main body as well as my headings*/
 body {
     font-family: Ubuntu-Light;
     background-color: var(--main-color);
@@ -79,6 +89,13 @@ h4 {
 }
 /*Mobile landscape scaling.*/
 @media only screen and (max-width: 1000px) {
+    body {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
     body {
         margin-left: 0%;
         margin-right: 0%;
@@ -257,7 +274,7 @@ input:checked + .slider:before {
 }
 
 
-/*Below is the styling for the navigation bar as well as the main body and their contents.*/
+/*Below is the styling for the main body and it's contents.*/
 main {
     width: auto;
     height: auto;
