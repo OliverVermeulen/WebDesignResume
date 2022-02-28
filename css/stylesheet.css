@@ -3,10 +3,6 @@
     scroll-behavior: smooth;
 }
 
-/*Below is the custom fonts I used as well as all the elements I implemented them on.*/
-@font-face { font-family: Staatliches; src: url('Staatliches.ttf'); }
-@font-face { font-family: Ubuntu-Light; src: url('Ubuntu-Light.ttf'); }
-
 .theme-light {
     --picture-color: url("../images/plant-background.png");
     --heading-color: #ffffff;
@@ -30,6 +26,10 @@
     --mobile-picture-color: url("../images/mobile-plant-line-art-dark.png");
     --icon-color: brightness(80%);
 }
+
+/*Below is the custom fonts I used as well as all the elements I implemented them on.*/
+@font-face { font-family: Staatliches; src: url('Staatliches.ttf'); }
+@font-face { font-family: Ubuntu-Light; src: url('Ubuntu-Light.ttf'); }
 
 body {
     font-family: Ubuntu-Light;
@@ -150,8 +150,9 @@ header {
     }
 }
 
-/*sidebar*/
-.sidebar {
+
+/*Below is the styling for my navbar and toggle switch.*/
+nav {
     background-color: var(--navbar-color);
     width: auto;
     height: auto;
@@ -161,9 +162,11 @@ header {
     flex-direction: row;
     overflow: auto;
     justify-content: space-around;
+    /*position: sticky;
+    top: 0%;*/
 }
 
-.sidebar h3 {
+nav h3 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -178,103 +181,6 @@ header {
     opacity: 85%;
 }
 
-@media only screen and (max-width: 600px) {
-    .sidebar {
-        flex-wrap: wrap;
-    }
-}
-
-/*Below is the styling for the navigation bar as well as the main body and their contents.*/
-main {
-    width: auto;
-    height: auto;
-    background-image: var(--body-picture-color);
-    background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-position-y: 95%;
-    transition: all 0.9s;
-}
-
-.content {
-    border: 0.5px solid var(--font-color);
-    border-radius: 20px;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.content p {
-    margin-left: 40px;
-}
-
-/*Mobile portrait scaling.*/
-@media only screen and (max-width: 600px) {
-    main {
-        background-image: var(--mobile-picture-color);
-        background-size: 100px;
-        background-position-x: 75%;
-        background-position-y: 4050px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .content h2 {
-        text-align: center;
-    }
-    .content h3 {
-        text-align: center;
-    }
-    .content h4 {
-        text-align: center;
-    }
-    .content p {
-        margin-left: 0%;
-    }
-    .content dd {
-      margin-left: 0%;
-    }
-    [href]:hover {
-        opacity: 100%;
-    }
-}
-
-/*Below is the styling for the footer and its contents.*/
-footer {
-    background-color: #2D4030;
-    color: var(--heading-color);
-    text-align: center;
-    background-image: var(--picture-color);
-    width: auto;
-    height: auto;
-    transition: all 0.9s;
-}
-
-#social {
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-.social-icons {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    filter: var(--icon-color);
-}
-
-.social-icons:hover {
-    box-shadow: 0 5px 15px #FFFFFF;
-    border-radius: 50px;
-}
-
-/*Mobile portrait scaling.*/
-@media only screen and (max-width: 600px) {
-    .social-icons:hover {
-        box-shadow: none;
-    }
-}
-
-/*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -326,4 +232,112 @@ input:checked + .slider:before {
 }
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+
+/*Below is the styling for the navigation bar as well as the main body and their contents.*/
+main {
+    width: auto;
+    height: auto;
+    background-image: var(--body-picture-color);
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 95%;
+    transition: all 0.9s;
+}
+
+.content {
+    border: 0.5px solid var(--font-color);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-left: 32px;
+}
+
+#statsflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+/*Mobile portrait scaling.*/
+@media only screen and (max-width: 600px) {
+    main {
+        background-image: var(--mobile-picture-color);
+        background-size: 100px;
+        background-position-x: 75%;
+        background-position-y: 4050px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content h2 {
+        text-align: center;
+    }
+    .content h3 {
+        text-align: center;
+    }
+    .content h4 {
+        text-align: center;
+    }
+    .content p {
+        margin-left: 0%;
+    }
+    .content dd {
+      margin-left: 0%;
+    }
+    [href]:hover {
+        opacity: 100%;
+    }
+    #statsflex {
+        flex-direction: column;
+    }
+}
+
+
+/*Below is the styling for the footer and its contents.*/
+footer {
+    background-color: #2D4030;
+    color: var(--heading-color);
+    text-align: center;
+    background-image: var(--picture-color);
+    width: auto;
+    height: auto;
+    transition: all 0.9s;
+}
+
+footer h2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.connect-icons {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    filter: var(--icon-color);
+}
+
+.connect-icons:hover {
+    box-shadow: 0 5px 15px #FFFFFF;
+    border-radius: 50px;
+}
+
+/*Mobile portrait scaling.*/
+@media only screen and (max-width: 600px) {
+    .connect-icons:hover {
+        box-shadow: none;
+    }
 }
