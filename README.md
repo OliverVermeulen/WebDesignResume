@@ -5,23 +5,21 @@ This is my personal resume I can share with prospective employers.
 
 
 ## MVP
-- My name and an appropriate description of myself
-- An introductory paragraph about myself
-- A list of my skills
-- A list of my interests
-- A list of my experience
-- A list of my education and qualifications
-- A circular image of myself
-- My contact information
-- A navigation menu
-- Applying CSS
-- Images that scale
-- Consistent colour scheme
-- Sections for header, footer, main body
+- Animation on some of my images
+- A background image
+- Make use of the picture element
+- CSS Media Queries
+- Bootstrap:
+    5.1 containers
+    5.2 grid
+    5.3 spacing and margins
+    5.4 typography, i.e. awesome fonts
+    5.5 form and cards
+    5.6 navbar
 
 
 ## Backlog
-- Add comments to code (complete)
-- Add custom fonts (complete)
-- Scale profile photo (complete)
+- Add cards
+- Add grid
+- Add navbar
 
