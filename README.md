@@ -22,4 +22,6 @@ This is my personal resume I can share with prospective employers.
 - Add cards
 - Add grid (completed)
 - Add navbar
+- Add tablet/small screen query
+- Add awesome fonts typography
 

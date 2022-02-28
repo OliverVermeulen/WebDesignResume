@@ -39,6 +39,7 @@ body {
     font-size: 125%;
     margin-left: 450px;
     margin-right: 450px;
+    transition: all 0.9s;
 }
 
 h1 {
@@ -93,7 +94,6 @@ header {
     height: auto;
     align-items: center;
     background-image: var(--picture-color);
-    transition: all 0.9s;
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -263,9 +263,8 @@ main {
     height: auto;
     background-image: var(--body-picture-color);
     background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-position-y: 55%;
-    transition: all 0.9s;
+    background-position-x: 97%;
+    background-position-y: 60%;
 }
 
 .content {
@@ -293,16 +292,14 @@ main {
 }
 
 .btn-primary:hover {
-    text-transform: uppercase;
+    background-color: var(--navbar-color);
+    text-decoration: underline;
 }
 
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     main {
-        background-image: var(--mobile-picture-color);
-        background-size: 100px;
-        background-position-x: 75%;
-        background-position-y: 4050px;
+        background-image: none;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -336,7 +333,6 @@ footer {
     background-image: var(--picture-color);
     width: auto;
     height: auto;
-    transition: all 0.9s;
 }
 
 footer h2 {
