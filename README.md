@@ -20,6 +20,6 @@ This is my personal resume I can share with prospective employers.
 
 ## Backlog
 - Add cards
-- Add grid
+- Add grid (completed)
 - Add navbar
 

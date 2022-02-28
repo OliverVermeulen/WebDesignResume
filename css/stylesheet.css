@@ -76,7 +76,7 @@ h4 {
         margin-right: 0%;
     }
 }
-
+/*Mobile landscape scaling.*/
 @media only screen and (max-width: 1000px) {
     body {
         margin-left: 0%;
@@ -156,7 +156,9 @@ header {
         text-align: center;
     }
 }
-
+/*Mobile landscape scaling.
+@media only screen and (max-width: 1000px) {
+}*/
 
 /*Below is the styling for my navbar and toggle switch.*/
 nav {
@@ -241,12 +243,13 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+/*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     nav {
         flex-wrap: wrap;
     }
 }
-
+/*Mobile landscape scaling.*/
 @media only screen and (max-width: 1000px) {
     nav {
         flex-wrap: wrap;
@@ -279,6 +282,20 @@ main {
     margin-left: 32px;
 }
 
+.p-5 {
+    padding: 0% !important;
+}
+
+.btn-primary {
+    color: var(--font-color);
+    background-color: var(--navbar-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    text-transform: uppercase;
+}
+
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     main {
@@ -289,31 +306,24 @@ main {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .content h2 {
-        text-align: center;
-    }
-    .content h3 {
-        text-align: center;
-    }
-    .content h4 {
+    .content h2, h3, h4{
         text-align: center;
     }
     .content p {
         margin-left: 0%;
     }
-    .content dd {
-      margin-left: 0%;
-    }
     [href]:hover {
         opacity: 100%;
     }
 }
-
+/*Mobile landscape scaling.*/
 @media only screen and (max-width: 1000px) {
     main {
         width: auto;
         height: auto;
         background-image: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
 }
@@ -348,6 +358,12 @@ footer h2 {
 
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
+    .connect-icons:hover {
+        box-shadow: none;
+    }
+}
+/*Mobile landscape scaling.*/
+@media only screen and (max-width: 1000px) {
     .connect-icons:hover {
         box-shadow: none;
     }
