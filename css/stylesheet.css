@@ -279,13 +279,6 @@ main {
     margin-left: 32px;
 }
 
-#statsflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    overflow: auto;
-}
-
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
     main {
@@ -313,9 +306,6 @@ main {
     }
     [href]:hover {
         opacity: 100%;
-    }
-    #statsflex {
-        flex-direction: column;
     }
 }
 
