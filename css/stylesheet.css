@@ -141,18 +141,6 @@ header {
     }
 }
 
-/*Below is the styling for the navigation bar as well as the main body and their contents.*/
-main {
-    background-color: var(--main-color);
-    width: auto;
-    height: auto;
-    background-image: var(--body-picture-color);
-    background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-position-y: 95%;
-    transition: all 0.9s;
-}
-
 .sidebar {
     background-color: var(--navbar-color);
     width: auto;
@@ -178,6 +166,18 @@ main {
 
 [href]:hover {
     opacity: 85%;
+}
+
+/*Below is the styling for the navigation bar as well as the main body and their contents.*/
+main {
+    background-color: var(--main-color);
+    width: auto;
+    height: auto;
+    background-image: var(--body-picture-color);
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 95%;
+    transition: all 0.9s;
 }
 
 .content {
