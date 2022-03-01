@@ -334,6 +334,8 @@ main {
         background-image: none;
         padding-left: 10px;
         padding-right: 10px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     
 }
