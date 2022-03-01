@@ -93,13 +93,6 @@ h4 {
     }
 }
 
-/*@media only screen and (max-width: 1700px) {
-    body {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-}*/
-
 /*Below is the styling for the header and its contents.*/
 header {
     background-color: #2D4030;
@@ -273,7 +266,7 @@ main {
     background-image: var(--body-picture-color);
     background-repeat: no-repeat;
     background-position-x: 97%;
-    background-position-y: 60%;
+    background-position-y: 37%;
     margin-left: 450px;
     margin-right: 450px;
 }
