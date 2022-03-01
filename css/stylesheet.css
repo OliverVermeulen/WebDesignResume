@@ -95,12 +95,12 @@ h4 {
     }
 }
 
-@media only screen and (max-width: 1700px) {
+/*@media only screen and (max-width: 1700px) {
     body {
         margin-left: 0%;
         margin-right: 0%;
     }
-}
+}*/
 
 /*Below is the styling for the header and its contents.*/
 header {
