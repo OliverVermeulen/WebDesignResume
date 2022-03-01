@@ -47,8 +47,6 @@ body {
     color: var(--font-color);
     margin: 0;
     font-size: 125%;
-    margin-left: 450px;
-    margin-right: 450px;
     transition: all 0.9s;
 }
 
@@ -141,10 +139,6 @@ header {
     text-align: left;
 }
 
-#contact dd {
-    margin-left: 0%;
-}
-
 .contact-icons {
     width: 20px;
     height: 20px;
@@ -188,8 +182,6 @@ nav {
     flex-direction: row;
     overflow: auto;
     justify-content: space-around;
-    /*position: sticky;
-    top: 0%;*/
 }
 
 nav h3 {
@@ -282,6 +274,8 @@ main {
     background-repeat: no-repeat;
     background-position-x: 97%;
     background-position-y: 60%;
+    margin-left: 450px;
+    margin-right: 450px;
 }
 
 .content {
@@ -319,6 +313,8 @@ main {
         background-image: none;
         padding-left: 10px;
         padding-right: 10px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .content h2, h3, h4{
         text-align: center;
