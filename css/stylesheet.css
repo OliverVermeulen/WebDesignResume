@@ -285,6 +285,11 @@ main {
     margin-left: 32px;
 }
 
+.carousel{
+    width: 450px;
+    height: 450px;
+}
+
 .p-5 {
     padding: 0% !important;
 }
@@ -317,6 +322,10 @@ main {
     }
     [href]:hover {
         opacity: 100%;
+    }
+    .carousel {
+        width: 350px;
+        height: 350px;
     }
 }
 /*Mobile landscape scaling.*/
