@@ -362,13 +362,10 @@ footer h2 {
 
 footer ul {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding-left: 0%;
     margin-bottom: 0%;
-  }
-  
-footer ul li {
-    list-style: none;
 }
 
 footer ul li a {
