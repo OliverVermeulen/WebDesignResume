@@ -170,6 +170,10 @@ header {
 
 
 /*Below is the styling for my navbar and toggle switch.*/
+
+.navbar>.container-fluid {
+    display: block;
+}
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--link-color);
 }
@@ -255,10 +259,10 @@ input:checked + .slider:before {
 main {
     width: auto;
     height: auto;
-    background-image: var(--body-picture-color);
+    /*background-image: var(--body-picture-color);
     background-repeat: no-repeat;
-    background-position-x: 97%;
-    background-position-y: 37%;
+    background-position-x: 95%;
+    background-position-y: 43%;*/
     margin-left: 450px;
     margin-right: 450px;
 }
