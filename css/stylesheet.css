@@ -170,16 +170,16 @@ header {
 
 
 /*Below is the styling for my navbar and toggle switch.*/
-
-.navbar>.container-fluid {
-    display: block;
-}
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--link-color);
-}
-
-.bg-light {
-    background-color: var(--navbar-color) !important;
+#navigation {
+    background-color: var(--navbar-color);
+    width: auto;
+    height: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: space-around;
 }
 
 [href] {
@@ -247,11 +247,15 @@ input:checked + .slider:before {
 
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
-
+    #navigation {
+        flex-wrap: wrap;
+    }
 }
 /*Mobile landscape scaling.*/
 @media only screen and (max-width: 1000px) {
-
+    #navigation {
+        flex-wrap: wrap;
+    }
 }
 
 

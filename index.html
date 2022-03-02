@@ -33,55 +33,32 @@
       <div id="contact">
         <h2 class="display-3">Contact:</h2>
         <ul class="list-unstyled">
-          <li><address><img class="contact-icons" src="./images/email-icon.png" alt="Email icon"/>Email: oliververmeulen862@gmail.com</address></li>
+          <li><address><img class="contact-icons" src="./images/email-icon.png" alt="Email icon"/>oliververmeulen 862@gmail.com</address></li>
 
-          <li><address><img class="contact-icons" src="./images/phone-icon.png" alt="Phone icon"/>Cellphone: (+27) 83 410 5243</address></li>
+          <li><address><img class="contact-icons" src="./images/location-icon.png" alt="Location icon"/>Riversdale, South Africa, 6670</address></li>
 
-          <li><address><img class="contact-icons" src="./images/location-icon.png" alt="Location icon"/>Location: Riversdale, South Africa, 6670</address></li>
+          <li><address><img class="contact-icons" src="./images/phone-icon.png" alt="Phone icon"/>(+27) 83 410 5243</address></li>
         </ul>
       </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <div class="row justify-content-md-around">
-            <div class="col-md-auto">
-              <a href="#introduction"><h3>Introduction</h3></a>
-            </div>
-
-            <div class="col-md-auto">
-              <a href="#education"><h3>Education</h3></a>
-            </div>
-
-            <div class="col-md-auto">
-              <a href="#experience"><h3>Experience</h3></a>
-            </div>
-
-            <div class="col-md-auto">
-              <a href="#stats"><h3>Stats</h3></a>
-            </div>
-
-            <div class="col-md-auto">
-              <a href="#projects"><h3>Projects</h3></a>
-            </div>
-
-            <div class="col-md-auto">
-              <a href="#reach-me"><h3>Reach Me</h3></a>
-            </div>
-
-            <div class="col-md-auto">
-                <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input
-                      type="checkbox"
-                      id="checkbox"
-                      onclick="toggleTheme()"/>
-                    <div class="slider round"></div>
-                  </label>
-                </div>
-            </div>
-          </div>
-      </div>
+    <!--The section below contains a navigation menu and a button that changes the sites theme.-->
+    <nav id="navigation">
+        <div><a href="#introduction"><h3>Introduction</h3></a></div>
+        <div><a href="#education"><h3>Education</h3></a></div>
+        <div><a href="#experience"><h3>Experience</h3></a></div>
+        <div><a href="#stats"><h3>Stats</h3></a></div>
+        <div><a href="#projects"><h3>Projects</h3></a></div>
+        <div><a href="#reach-me"><h3>Reach Me</h3></a></div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input
+              type="checkbox"
+              id="checkbox"
+              onclick="toggleTheme()"/>
+            <div class="slider round"></div>
+          </label>
+        </div>
     </nav>
 
     <!--The section below contains information about myself, my education, my experience, my stats and a way to email me.-->
@@ -218,11 +195,11 @@
             <form action="post">
               <div class="form-group row">
                 <div class="col-md-6 p-2">
-                  <input type="text" class="form-control" placeholder="Name / Company"/>
+                  <input type="text" class="form-control" placeholder="Name"/>
                 </div>
 
                 <div class="col-md-6 p-2">
-                  <input type="email" class="form-control" placeholder="Email Address"/>
+                  <input type="email" class="form-control" placeholder="Email"/>
                 </div>
               </div>
 
