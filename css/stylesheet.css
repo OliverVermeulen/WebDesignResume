@@ -170,13 +170,6 @@ header {
 
 
 /*Below is the styling for my navbar and toggle switch.*/
-
-.navbarSupportedContent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--link-color);
 }
