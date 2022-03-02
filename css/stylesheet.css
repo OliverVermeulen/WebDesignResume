@@ -165,7 +165,7 @@ header {
 }*/
 
 /*Below is the styling for my navbar and toggle switch.*/
-nav {
+/*nav {
     background-color: var(--navbar-color);
     width: auto;
     height: auto;
@@ -180,6 +180,10 @@ nav {
 nav h3 {
     margin-top: 15px;
     margin-bottom: 15px;
+}*/
+
+.bg-dark p-4 {
+    background-color: #0072b1;
 }
 
 [href] {
