@@ -447,3 +447,7 @@ footer ul li:nth-child(3) a:before {
 .modal-content {
     background-color: var(--main-color);
 }
+
+.w-50 {
+    width: auto !important;
+}
