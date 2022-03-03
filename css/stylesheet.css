@@ -170,16 +170,13 @@ header {
 
 
 /*Below is the styling for my navbar and toggle switch.*/
-#navigation {
-    background-color: var(--navbar-color);
-    width: auto;
-    height: auto;
-    padding-left: 14px;
-    padding-right: 14px;
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    justify-content: space-around;
+.bg-light {
+    background-color: var(--navbar-color) !important;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
 }
 
 [href] {
@@ -247,15 +244,11 @@ input:checked + .slider:before {
 
 /*Mobile portrait scaling.*/
 @media only screen and (max-width: 600px) {
-    #navigation {
-        flex-wrap: wrap;
-    }
+
 }
 /*Mobile landscape scaling.*/
 @media only screen and (max-width: 1000px) {
-    #navigation {
-        flex-wrap: wrap;
-    }
+
 }
 
 
