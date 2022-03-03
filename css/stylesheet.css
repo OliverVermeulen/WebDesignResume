@@ -199,6 +199,7 @@ header {
 }
 
 .navbar-light .navbar-toggler {
+    color: transparent;
     border-color: var(--heading-color);
     margin-right: 5px;
 }
