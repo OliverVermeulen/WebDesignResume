@@ -451,3 +451,7 @@ footer ul li:nth-child(3) a:before {
 .w-50 {
     width: auto !important;
 }
+
+.p-5 {
+    padding: 0% !important;
+}
