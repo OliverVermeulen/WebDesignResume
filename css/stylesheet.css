@@ -85,8 +85,8 @@ h4 {
         margin-right: 0%;
     }
 }
-/*Mobile landscape scaling.*/
-@media only screen and (max-width: 1000px) {
+/*Screen / Tablet scaling*/
+@media only screen and (max-width: 1500px) {
     body {
         margin-left: 0%;
         margin-right: 0%;
@@ -139,7 +139,7 @@ header {
     filter: var(--icon-color);
 }
 
-/*Mobile portrait scaling.*/
+/*Mobile scaling*/
 @media only screen and (max-width: 600px) {
     header {
         background-image: var(--picture-color);
@@ -160,8 +160,8 @@ header {
         text-align: center;
     }
 }
-/*Mobile landscape scaling.*/
-@media only screen and (max-width: 1000px) {
+/*Screen / Tablet scaling*/
+@media only screen and (max-width: 1500px) {
     header {
         background-image: var(--picture-color);
         background-size: cover;
@@ -184,6 +184,18 @@ header {
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: center;
+    align-items: center;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/menu-icon.png);
+}
+.navbar-light .navbar-toggler-icon:active {
+    background-image: url(../images/x-icon.png);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: var(--heading-color);
 }
 
 .nav-link {
@@ -202,6 +214,7 @@ header {
 }
 
 [href]:hover {
+    color: var(--link-color);
     opacity: 85%;
 }
 
@@ -258,13 +271,23 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-/*Mobile portrait scaling.*/
+/*Mobile scaling*/
 @media only screen and (max-width: 600px) {
-
+    li {
+        margin-left: 10px;
+    }
+    li h3 {
+        text-align: left;
+    }
 }
-/*Mobile landscape scaling.*/
-@media only screen and (max-width: 1000px) {
-
+/*Screen / Tablet scaling*/
+@media only screen and (max-width: 1500px) {
+    li{
+        margin-left: 10px;
+    }
+    li h3 {
+        text-align: left;
+    }
 }
 
 
@@ -303,6 +326,25 @@ main {
 .carousel{
     width: 450px;
     height: 450px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--font-color);
+    background-color: var(--navbar-color);
+}
+
+.modal-content {
+    background-color: var(--main-color);
+}
+
+.w-50 {
+    width: auto !important;
+}
+
+.p-5 {
+    padding: 0% !important;
 }
 
 .btn-primary {
@@ -316,7 +358,7 @@ main {
     text-decoration: underline;
 }
 
-/*Mobile portrait scaling.*/
+/*Mobile scaling*/
 @media only screen and (max-width: 600px) {
     main {
         background-image: none;
@@ -339,8 +381,8 @@ main {
         height: 350px;
     }
 }
-/*Mobile landscape scaling.*/
-@media only screen and (max-width: 1000px) {
+/*Screen / Tablet scaling*/
+@media only screen and (max-width: 1500px) {
     main {
         width: auto;
         height: auto;
@@ -350,6 +392,10 @@ main {
         margin-left: 0%;
         margin-right: 0%;
     } 
+    .carousel {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /*Below is the styling for the footer and its contents.*/
@@ -411,7 +457,7 @@ footer ul li a:before {
 }
 
 footer ul li a:hover:before {
-top: 0;
+    top: 0;
 }
 
 footer ul li:nth-child(1) a:before{
@@ -426,32 +472,15 @@ footer ul li:nth-child(3) a:before {
     background: #0072b1;
 }
 
-/*Mobile portrait scaling.*/
+/*Mobile scaling*/
 @media only screen and (max-width: 600px) {
     .connect-icons:hover {
         box-shadow: none;
     }
 }
-/*Mobile landscape scaling.*/
-@media only screen and (max-width: 1000px) {
+/*Screen / Tablet scaling*/
+@media only screen and (max-width: 1500px) {
     .connect-icons:hover {
         box-shadow: none;
     }
-}
-
-.modal-header {
-    border-bottom: 1px solid var(--font-color);
-    background-color: var(--navbar-color);
-}
-
-.modal-content {
-    background-color: var(--main-color);
-}
-
-.w-50 {
-    width: auto !important;
-}
-
-.p-5 {
-    padding: 0% !important;
 }
