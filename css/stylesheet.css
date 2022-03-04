@@ -5,14 +5,12 @@
 
 /*Below are my variable color schemes.*/
 .theme-light {
-    --picture-color: url("../images/plant-background.png");
+    --picture-color: url("../images/plant-background.jpg");
     --heading-color: #ffffff;
     --navbar-color: #7BB376;
     --main-color: #fbfbfe;
     --font-color: #000000;
     --link-color: #325364;
-    --body-picture-color: url("../images/plant-line-art.png");
-    --mobile-picture-color: url("../images/mobile-plant-line-art.png");
     --icon-color: brightness(100%);
 }
 
@@ -23,8 +21,6 @@
     --main-color: #282a36;
     --font-color: #ccc;
     --link-color: #ffffff;
-    --body-picture-color: url("../images/plant-line-art-dark.png");
-    --mobile-picture-color: url("../images/mobile-plant-line-art-dark.png");
     --icon-color: brightness(80%);
 }
 
@@ -278,10 +274,6 @@ input:checked + .slider:before {
 main {
     width: auto;
     height: auto;
-    /*background-image: var(--body-picture-color);
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 43%;*/
     margin-left: 450px;
     margin-right: 450px;
 }
