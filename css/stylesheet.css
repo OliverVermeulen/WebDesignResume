@@ -95,7 +95,7 @@ h4 {
 
 /*Below is the styling for the header and its contents.*/
 header {
-    background-color: #2D4030;
+    background-color: var(--navbar-color);
     color: var(--heading-color);
     padding: 0.5%;
     width: auto;
@@ -220,10 +220,10 @@ header {
     background: transparent;
 }
 
-[href]:hover {
+/*[href]:hover {
     color: var(--link-color);
     opacity: 85%;
-}
+}*/
 
 .theme-switch-wrapper {
     display: flex;
@@ -407,7 +407,7 @@ main {
 
 /*Below is the styling for the footer and its contents.*/
 footer {
-    background-color: #2D4030;
+    background-color: var(--navbar-color);
     color: var(--heading-color);
     text-align: center;
     background-image: var(--picture-color);
