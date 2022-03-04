@@ -21,7 +21,6 @@ This is my personal resume I can share with prospective employers.
 ## Backlog
 - Add cards
 - Add grid (completed)
-- Add navbar
-- Add tablet/small screen query
-- Add awesome fonts typography
-
+- Add navbar (completed)
+- Add tablet/small screen query (completed)
+- Add awesome fonts typography (completed)
