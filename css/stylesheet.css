@@ -7,7 +7,7 @@
 .theme-light {
     --picture-color: url("../images/plant-background.jpg");
     --heading-color: #ffffff;
-    --navbar-color: #7BB376;
+    --bar-color: #7BB376;
     --main-color: #fbfbfe;
     --font-color: #000000;
     --link-color: #325364;
@@ -17,7 +17,7 @@
 .theme-dark {
     --picture-color: url("../images/plant-background-dark.jpg");
     --heading-color: #ccc;
-    --navbar-color: #b1640d;
+    --bar-color: #b1640d;
     --main-color: #282a36;
     --font-color: #ccc;
     --link-color: #ffffff;
@@ -91,7 +91,7 @@ h4 {
 
 /*Below is the styling for the header and its contents.*/
 header {
-    background-color: var(--navbar-color);
+    background-color: var(--bar-color);
     color: var(--heading-color);
     padding: 5px;
     width: auto;
@@ -167,7 +167,7 @@ header {
 
 /*Below is the styling for my navbar and toggle switch.*/
 .bg-light {
-    background-color: var(--navbar-color) !important;
+    background-color: var(--bar-color) !important;
 }
 
 #navbar-nav mr-auto li {
@@ -225,7 +225,7 @@ header {
 }
 
 .slider:before {
-    background-color: var(--navbar-color);
+    background-color: var(--bar-color);
     bottom: 4px;
     content: "";
     height: 26px;
@@ -312,15 +312,11 @@ main [href] {
 
 .modal-header {
     border-bottom: 1px solid var(--font-color);
-    background-color: var(--navbar-color);
+    background-color: var(--bar-color);
 }
 
 .modal-content {
     background-color: var(--main-color);
-}
-
-.w-50 {
-    width: auto !important;
 }
 
 .p-5 {
@@ -329,12 +325,12 @@ main [href] {
 
 .btn-primary {
     color: var(--font-color);
-    background-color: var(--navbar-color);
+    background-color: var(--bar-color);
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: var(--navbar-color);
+    background-color: var(--bar-color);
     text-decoration: underline;
 }
 
@@ -380,7 +376,7 @@ main [href] {
 
 /*Below is the styling for the footer and its contents.*/
 footer {
-    background-color: var(--navbar-color);
+    background-color: var(--bar-color);
     color: var(--heading-color);
     text-align: center;
     background-image: var(--picture-color);
