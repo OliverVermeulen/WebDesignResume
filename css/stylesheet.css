@@ -170,11 +170,6 @@ header {
 
 
 /*Below is the styling for my navbar and toggle switch.*/
-.navbar-brand{
-    padding-top: 0%;
-    margin-left: 5px;
-    margin-right: 0%;
-}
 
 .bg-light {
     background-color: var(--navbar-color) !important;
