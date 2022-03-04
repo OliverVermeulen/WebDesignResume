@@ -72,7 +72,6 @@ h4 {
     font-family: Staatliches, sans-serif;
     text-transform: uppercase;
     font-size: 135%;
-    margin-left: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -284,6 +283,14 @@ main [href] {
     background: transparent;
 }
 
+main h4 {
+    margin-left: 10px;
+}
+
+main p {
+    margin-left: 32px;
+}
+
 .content {
     border: 0.5px solid var(--font-color);
     border-radius: 20px;
@@ -292,10 +299,6 @@ main [href] {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.content p {
-    margin-left: 32px;
 }
 
 #project-box {
@@ -456,4 +459,59 @@ footer ul li:nth-child(3) a:before {
 /*Screen / Tablet scaling*/
 @media only screen and (max-width: 1500px) {
 
+}
+
+#reach-me-2 {
+    background-color: #0072b1;
+}
+
+#reach-me-2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+    margin-bottom: 0%;
+}
+
+#reach-me-2 ul li a {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--heading-color);
+    z-index: 1;
+}
+
+#reach-me-2 ul li a .icon {
+    position: relative;
+    color: var(--heading-color);
+    transition: .5s;
+    z-index: 3;
+}
+
+#reach-me-2 ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+#reach-me-2 ul li a:hover:before {
+    top: 0;
+}
+
+#reach-me-2 ul li a:before{
+    background: #ff0000;
 }
