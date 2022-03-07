@@ -46,6 +46,10 @@ body {
     transition: all 0.9s;
 }
 
+a {
+    cursor: pointer;
+}
+
 h1 {
     font-family: Staatliches, sans-serif;
     text-transform: uppercase;
@@ -156,6 +160,28 @@ header {
         text-align: center;
     }
 }
+
+/*landscape scaling*/
+@media only screen and (max-width: 900px) {
+    header {
+        background-image: var(--picture-color);
+        background-size: cover;
+        flex-direction: column;
+    }
+    #name h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #name h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #contact h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
 /*Screen / Tablet scaling*/
 @media (max-width: 1199.98px) {
     header {
@@ -193,6 +219,36 @@ nav {
 
 .nav-link {
     padding: 0%;
+}
+
+.modal-content {
+    background-color: var(--main-color);
+    border: 0.5px solid var(--font-color);
+    border-radius: 20px;
+}
+
+.modal-header {
+    background-color: var(--bar-color);
+    border-bottom: none;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.p-5 {
+    padding: 0% !important;
+}
+
+.btn-primary {
+    color: var(--font-color);
+    background-color: var(--bar-color);
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: var(--bar-color);
+    border-color: transparent;
+    text-decoration: underline;
 }
 
 .theme-switch-wrapper {
@@ -272,6 +328,9 @@ input:checked + .slider:before {
     }
     .navbar-light .navbar-nav .nav-link:hover {
         opacity: 100%;
+    }
+    .btn-primary:hover {
+        text-decoration: none;
     }
 }
 /*Screen / Tablet scaling*/
@@ -406,7 +465,6 @@ main h4 {
 /*Mobile scaling*/
 @media only screen and (max-width: 700px) {
     main {
-        background-image: none;
         padding-left: 10px;
         padding-right: 10px;
         margin-left: 0%;
@@ -436,12 +494,34 @@ main h4 {
         height: 200px;
     }
 }
+/*landscape scaling*/
+@media only screen and (max-width: 900px) {
+    #introduction p {
+        margin-left: 0%;
+    }
+    main [href]:hover {
+        opacity: 100%;
+    }
+    #card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 10px;
+    }
+    .card h4:hover {
+        opacity: 100%;
+    }
+    .carousel {
+        width: 350px;
+        height: 200px;
+    }
+}
 /*Screen / Tablet scaling*/
 @media only screen and (max-width: 1199.98px) {
     main {
         width: auto;
         height: auto;
-        background-image: none;
         padding-left: 10px;
         padding-right: 10px;
         margin-left: 0%;
