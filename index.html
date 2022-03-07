@@ -6,10 +6,10 @@
     <meta name="description" content="My personal CV"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Oliver Vermeulen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   </head>
 
   <body>
@@ -19,7 +19,7 @@
         <picture>
           <source media="(max-width: 600px)" srcset="./images/oliver-profile-headshot-small.png"/>
           <source media="(max-width: 1000px)" srcset="./images/oliver-profile-headshot-medium.png"/>
-          <source srcset="./images/oliver-profile-headshot.jpg" />
+          <source srcset="./images/oliver-profile-headshot.jpg"/>
           <img class="profile-headshot" src="./images/oliver-profile-headshot.jpg" alt="Oliver's profile photo"/>
         </picture>
       </div>
@@ -44,7 +44,7 @@
     <!--The section below contains a navigation menu and a button that changes the sites theme.-->
     <nav class="navbar sticky-top navbar sticky-top navbar-lightnavbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -63,54 +63,54 @@
             <li class="nav-item"><a class="nav-link" href="#tech-stack"><h3>Tech Stack</h3></a></li>
 
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" id="hgh">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                 <h3>Reach me</h3>
               </a>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel">Email Me</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-    
-                  <div class="modal-body">
-                    <form class="form-section p-5" id="contact-section">
-                      <div class="w-50 mx-auto">
-                        <form action="post">
-                          <div class="form-group row">
-                            <div class="col-md-6 p-2">
-                              <input type="text" class="form-control" placeholder="Name"/>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title" id="exampleModalLabel">Email Me</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                      <form class="form-section p-5" id="contact-section">
+                        <div class="w-50 mx-auto">
+                          <form action="post">
+                            <div class="form-group row">
+                              <div class="col-md-6 p-2">
+                                <input type="text" class="form-control" placeholder="Name"/>
+                              </div>
+                              <div class="col-md-6 p-2">
+                                <input type="email" class="form-control" placeholder="Email"/>
+                              </div>
                             </div>
-                            <div class="col-md-6 p-2">
-                              <input type="email" class="form-control" placeholder="Email"/>
+
+                            <div class="form-group row">
+                              <div class="col-md-12 p-2">
+                                <input type="text" class="form-control" placeholder="Subject"/>
+                              </div>
                             </div>
-                          </div>
-    
-                          <div class="form-group row">
-                            <div class="col-md-12 p-2">
-                              <input type="text" class="form-control" placeholder="Subject"/>
+
+                            <div class="form-group row">
+                              <div class="col-md-12 p-2">
+                                <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
+                              </div>
                             </div>
-                          </div>
-    
-                          <div class="form-group row">
-                            <div class="col-md-12 p-2">
-                              <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
+
+                            <div class="form-group row">
+                              <div class="col-md-12 text-center p-2">
+                                <button type="submit" class="btn btn-primary button-colour">Send Message</button>
+                              </div>
                             </div>
-                          </div>
-    
-                          <div class="form-group row">
-                            <div class="col-md-12 text-center p-2">
-                              <button type="submit" class="btn btn-primary button-colour">Send Message</button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </form>
+                          </form>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </li>
 
             <li class="nav-item">
@@ -140,6 +140,7 @@
         <h3><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> - 2021</h3>
         <h4>Learn JavaScript certificate</h4>
         <p>For this certificate, I learned how to use JavaScript programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax, and learnt to use its many elements; including Bash terminals and node.js to create small projects.</p>
+
         <h4>Learn HTML certificate</h4>
         <p>During this course I learned how to use HTML5, including all the common HTML tags and how to create HTML tables to present tabular data efficiently. I completed quizzes based on this and I received a certificate of completion.</p>
 
@@ -147,7 +148,9 @@
         <h4>National Senior Certificate</h4>
         <ul>
           <li>From 2016 to 2020 I attended Langenhoven High School in Riversdale and after matriculating in 2020 I received my National Senior Certificate.</li>
+
           <li>Relevant subjects: CAT(Computer Applications and Technology), EGD(Engineering Graphics and Design), Mathematical Literacy, English and Afrikaans.</li>
+
           <li>Received a distinction for Mathematical Literacy.</li>
         </ul>
       </section>
@@ -213,41 +216,40 @@
       <section class="content" id="projects">
         <h2>Projects</h2>
         <div id="card-box">
-        <div class="card" style="width: 18rem;">
-          <img src="./images/vine-vibe.jfif" class="card-img-top" alt="Vine Vibe">
-          <div class="card-body">
-            <h3 class="card-title">Card title</h3>
-            <p class="card-text">✨ 🍷 We decided to create a virtual wine cellar where we could virtually store all of the wines we loved, and hoard all of the ones we hadn't tried yet! 🍷 ✨</p>
-            <a href="https://github.com/VineVibe" target="_blank"><h4>See project</h4></a>
+          <div class="card" style="width: 18rem">
+            <img src="./images/vine-vibe.jfif" class="card-img-top" alt="Vine Vibe"/>
+            <div class="card-body">
+              <h3 class="card-title">Card title</h3>
+              <p class="card-text">✨ 🍷 We decided to create a virtual wine cellar where we could virtually store all of the wines we loved, and hoard all of the ones we hadn't tried yet! 🍷 ✨</p>
+              <a href="https://github.com/VineVibe" target="_blank"><h4>See project</h4></a>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="./images/keep-the-receipts.png" class="card-img-top" alt="Keep the Receipts">
-          <div class="card-body">
-            <h3 class="card-title">Keep the receipts</h3>
-            <p class="card-text">🔎 💰 Data on government contracting and purchasing - who the government pays for goods and services, and how much. 🔎 💰</p>
-            <a href="https://github.com/keep-the-receipts" target="_blank"><h4>See project</h4></a>
+          <div class="card" style="width: 18rem">
+            <img src="./images/keep-the-receipts.png" class="card-img-top" alt="Keep the Receipts"/>
+            <div class="card-body">
+              <h3 class="card-title">Keep the receipts</h3>
+              <p class="card-text">🔎 💰 Data on government contracting and purchasing - who the government pays for goods and services, and how much. 🔎 💰</p>
+              <a href="https://github.com/keep-the-receipts" target="_blank"><h4>See project</h4></a>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="./images/jpass.jpg" class="card-img-top" alt="JPaas">
-          <div class="card-body">
-            <h3 class="card-title">JPaas</h3>
-            <p class="card-text">🧢 🎤 Jack Parow proverbs for any occasion. 🧢 🎤</p>
-            <p class="card-text">Coming soon...</p>
-            <a href="https://github.com/naartjie/jbaas" target="_blank"><h4>See project</h4></a>
+          <div class="card" style="width: 18rem">
+            <img src="./images/jpass.jpg" class="card-img-top" alt="JPaas"/>
+            <div class="card-body">
+              <h3 class="card-title">JPaas</h3>
+              <p class="card-text">🧢 🎤 Jack Parow proverbs for any occasion. 🧢 🎤</p>
+              <p class="card-text">Coming soon...</p>
+              <a href="https://github.com/naartjie/jbaas" target="_blank"><h4>See project</h4></a>
+            </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="content" id="tech-stack">
         <h2>Tech stack</h2>
         <div id="project-box">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <i class="fab fa-html5 icon fa-10x"></i>
@@ -292,7 +294,8 @@
 
         <li><a href="https://github.com/OliverVermeulen" target="_blank"><i class="fab fa-github icon" alt="Oliver's GitHub"></i></a></li>
 
-        <li><a href="https://www.linkedin.com/in/oliver-vermeulen-311221222/" target="_blank"><i class="fab fa-linkedin-in icon" alt="Oliver's Linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/oliver-vermeulen-311221222/" target="_blank"><i class="fab fa-linkedin-in icon" alt="Oliver's Linkedin"></i></a>
+        </li>
       </ul>
     </footer>
   </body>
