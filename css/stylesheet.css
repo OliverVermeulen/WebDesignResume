@@ -71,22 +71,23 @@ h3 {
 h4 {
     font-family: Staatliches, sans-serif;
     text-transform: uppercase;
-    font-size: 135%;
+    font-size: 120%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body {
         margin-left: 0%;
         margin-right: 0%;
     }
 }
 /*Screen / Tablet scaling*/
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1199.98px) {
     body {
         margin-left: 0%;
         margin-right: 0%;
     }
 }
+
 
 /*Below is the styling for the header and its contents.*/
 header {
@@ -135,7 +136,7 @@ header {
 }
 
 /*Mobile scaling*/
-/*@media only screen and (max-width: 600px) {
+@media (max-width: 700px) {
     header {
         background-image: var(--picture-color);
         background-size: cover;
@@ -156,40 +157,6 @@ header {
     }
 }
 /*Screen / Tablet scaling*/
-/*@media only screen and (max-width: 1500px) {
-    header {
-        background-image: var(--picture-color);
-        background-size: cover;
-        padding: 5px;
-    }
-}*/
-
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    header {
-        background-image: var(--picture-color);
-        background-size: cover;
-        flex-direction: column;
-    }
-    #name h1 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    #name h2 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    #contact h2 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-}
-/*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {}
-/*Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {}
-/*Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
     header {
         background-image: var(--picture-color);
@@ -199,7 +166,7 @@ header {
 }
 
 
-/*Below is the styling for my navbar and toggle switch.*/
+/*Below is the styling for my navbar and it's contents.*/
 nav {
     background-color: var(--bar-color);
 }
@@ -220,6 +187,40 @@ nav {
 
 .nav-link {
     padding: 0%;
+}
+
+.modal-content {
+    background-color: var(--main-color);
+    border: 0.5px solid var(--font-color);
+    border-radius: 20px;
+}
+
+.modal-header {
+    border-bottom: transparent;
+    background-color: var(--bar-color);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#form-box {
+    text-align: center;
+}
+
+.p-5 {
+    padding: 0% !important;
+}
+
+.btn-primary {
+    color: var(--font-color);
+    background-color: var(--bar-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--bar-color);
+    text-decoration: underline;
 }
 
 .theme-switch-wrapper {
@@ -289,9 +290,8 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-
 /*Mobile scaling*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     li {
         margin-left: 10px;
     }
@@ -300,7 +300,7 @@ input:checked + .slider:before {
     }
 }
 /*Screen / Tablet scaling*/
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1199.98px) {
     li{
         margin-left: 10px;
     }
@@ -357,95 +357,50 @@ main h4 {
     margin-bottom: 16px;
 }
 
-#reach-me button a {
-    width: 80px;
-    height: 80px;
-    background-color: transparent;
-    text-align: center;
-    line-height: 80px;
-    font-size: 35px;
-    margin: 0 10px;
-    display: block;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid var(--font-color);
-    z-index: 1;
-}
-
-#reach-me button a .icon {
-    position: relative;
-    color: var(--font-color);
-    transition: .5s;
-    z-index: 3;
-}
-
-#reach-me button a:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: .5s;
-    z-index: 2;
-}
-
-#reach-me button a:hover:before {
-    top: 0;
-}
-
-#reach-me button a:before{
-    background: #F23838;
-}
-
-.modal-content {
-    background-color: var(--main-color);
-    border: 0.5px solid var(--font-color);
-    border-radius: 20px;
-}
-
-.modal-header {
-    border-bottom: transparent;
-    background-color: var(--bar-color);
-    padding-top: 0%;
-    padding-bottom: 0%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#form-box {
-    text-align: center;
-}
-
-.p-5 {
-    padding: 0% !important;
-}
-
-.btn-primary {
-    color: var(--font-color);
-    background-color: var(--bar-color);
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: var(--bar-color);
-    text-decoration: underline;
+#card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .card {
     background-color: var(--bar-color);
 }
 
-#card-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.card h3 {
+    text-align: center;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card a {
+    color: var(--link-color);
+}
+
+.card img {
+    filter: grayscale(100%);
+}
+
+.carousel-item i {
+    text-align: center;
+    color: var(--font-color);
+}
+  
+[class^="fa-"], [class*=" fa-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+.carousel-caption {
+    position:static;
+    color: var(--font-color);
 }
 
 /*Mobile scaling*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     main {
         background-image: none;
         padding-left: 10px;
@@ -456,23 +411,26 @@ main h4 {
     .content h2, h3, h4 {
         text-align: center;
     }
-    .content p {
+    #introduction p {
         margin-left: 0%;
     }
     [href]:hover {
         opacity: 100%;
     }
-    .carousel {
-        width: 350px;
-        height: 350px;
-    }
     #card-box {
         flex-direction: column;
         align-items: center;
     }
+    .card {
+        margin-bottom: 10px;
+    }
+    .carousel {
+        width: 350px;
+        height: 350px;
+    }
 }
 /*Screen / Tablet scaling*/
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1199.98px) {
     main {
         width: auto;
         height: auto;
@@ -483,6 +441,7 @@ main h4 {
         margin-right: 0%;
     }
 }
+
 
 /*Below is the styling for the footer and its contents.*/
 footer {
@@ -557,32 +516,4 @@ footer ul li:nth-child(2) a:before{
 
 footer ul li:nth-child(3) a:before {
     background: #0072b1;
-}
-
-/*Mobile scaling*/
-@media only screen and (max-width: 600px) {
-
-}
-/*Screen / Tablet scaling*/
-@media only screen and (max-width: 1500px) {
-
-}
-
-.carousel-item i {
-    text-align: center;
-    color: var(--font-color);
-  }
-  
-  [class^="fa-"], [class*=" fa-"] {
-      display: inline-block;
-      width: 100%;
-  }
-
-  .carousel-caption {
-      position:static;
-      color: var(--font-color);
-  }
-
-.card img {
-    filter: grayscale(100%);
 }

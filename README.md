@@ -1,7 +1,7 @@
 # Web Design Resume
 
 ## Description
-This is my personal resume I can share with prospective employers.
+This is my personal resume I can share with prospective employers and can be used as my personal website in the future.
 
 
 ## MVP
@@ -19,8 +19,12 @@ This is my personal resume I can share with prospective employers.
 
 
 ## Backlog
-- Add cards
-- Add grid (completed)
+- Add jumbotron (no longer possible)
 - Add navbar (completed)
-- Add tablet/small screen query (completed)
+- Add grid (completed)
+- Add cards (complete)
+- Add form (complete)
+- Add modal (complete)
+- Add carousel (complete)
+- Add media queries (completed)
 - Add awesome fonts typography (completed)

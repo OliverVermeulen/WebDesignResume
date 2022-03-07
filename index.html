@@ -60,7 +60,60 @@
 
             <li class="nav-item"><a class="nav-link" href="#projects"><h3>Projects</h3></a></li>
 
-            <li class="nav-item"><a class="nav-link" href="#reach-me"><h3>Reach Me</h3></a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech-stack"><h3>Tech Stack</h3></a></li>
+
+                        <li class="nav-item">
+            <div id="form-box">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" id="hgh">
+                <h3>Reach me</h3>
+              </a>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Email Me</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+    
+                  <div class="modal-body">
+                    <form class="form-section p-5" id="contact-section">
+                      <div class="w-50 mx-auto">
+                        <form action="post">
+                          <div class="form-group row">
+                            <div class="col-md-6 p-2">
+                              <input type="text" class="form-control" placeholder="Name"/>
+                            </div>
+                            <div class="col-md-6 p-2">
+                              <input type="email" class="form-control" placeholder="Email"/>
+                            </div>
+                          </div>
+    
+                          <div class="form-group row">
+                            <div class="col-md-12 p-2">
+                              <input type="text" class="form-control" placeholder="Subject"/>
+                            </div>
+                          </div>
+    
+                          <div class="form-group row">
+                            <div class="col-md-12 p-2">
+                              <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
+                            </div>
+                          </div>
+    
+                          <div class="form-group row">
+                            <div class="col-md-12 text-center p-2">
+                              <button type="submit" class="btn btn-primary button-colour">Send Message</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </li>
 
             <li class="nav-item">
               <label id="switch" class="switch">
@@ -159,40 +212,40 @@
         </div>
       </section>
 
-      <section class="content">
+      <section class="content" id="projects">
         <h2>Projects</h2>
         <div id="card-box">
         <div class="card" style="width: 18rem;">
           <img src="./images/vine-vibe.jfif" class="card-img-top" alt="Vine Vibe">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
+            <h3 class="card-title">Card title</h3>
             <p class="card-text">✨ 🍷 We decided to create a virtual wine cellar where we could virtually store all of the wines we loved, and hoard all of the ones we hadn't tried yet! 🍷 ✨</p>
-            <a href="https://github.com/VineVibe" target="_blank" class="btn btn-primary">See project</a>
+            <a href="https://github.com/VineVibe" target="_blank"><h4>See project</h4></a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
           <img src="./images/keep-the-receipts.png" class="card-img-top" alt="Keep the Receipts">
           <div class="card-body">
-            <h4 class="card-title">Keep the receipts</h4>
+            <h3 class="card-title">Keep the receipts</h3>
             <p class="card-text">🔎 💰 Data on government contracting and purchasing - who the government pays for goods and services, and how much. 🔎 💰</p>
-            <a href="https://github.com/keep-the-receipts" target="_blank" class="btn btn-primary">See project</a>
+            <a href="https://github.com/keep-the-receipts" target="_blank"><h4>See project</h4></a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
           <img src="./images/jpass.jpg" class="card-img-top" alt="Jpaas">
           <div class="card-body">
-            <h4 class="card-title">JPaas</h4>
+            <h3 class="card-title">JPaas</h3>
             <p class="card-text">🧢 🎤 Jack Parow proverbs for any occasion. 🧢 🎤</p>
             <p class="card-text">Coming soon...</p>
-            <a href="https://github.com/naartjie/jbaas" target="_blank" class="btn btn-primary">See project</a>
+            <a href="https://github.com/naartjie/jbaas" target="_blank"><h4>See project</h4></a>
           </div>
         </div>
       </div>
       </section>
 
-      <section class="content" id="projects">
+      <section class="content" id="tech-stack">
         <h2>Tech stack</h2>
         <div id="project-box">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -237,61 +290,6 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="content" id="reach-me">
-        <h2>Reach Me</h2>
-        <div id="form-box">
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="hgh">
-            <a><i class="fab fa-google icon"></i></a>
-          </button>
-        </div>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLabel">Email Me</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-
-              <div class="modal-body">
-                <form class="form-section p-5" id="contact-section">
-                  <div class="w-50 mx-auto">
-                    <form action="post">
-                      <div class="form-group row">
-                        <div class="col-md-6 p-2">
-                          <input type="text" class="form-control" placeholder="Name"/>
-                        </div>
-                        <div class="col-md-6 p-2">
-                          <input type="email" class="form-control" placeholder="Email"/>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <div class="col-md-12 p-2">
-                          <input type="text" class="form-control" placeholder="Subject"/>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <div class="col-md-12 p-2">
-                          <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <div class="col-md-12 text-center p-2">
-                          <button type="submit" class="btn btn-primary button-colour">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </section>
