@@ -349,7 +349,13 @@ main p {
 }
 
 #reach-me button a:before{
-    background: #ff0000;
+    background: #F23838;
+}
+
+.modal-content {
+    background-color: var(--main-color);
+    border: 0.5px solid var(--font-color);
+    border-radius: 20px;
 }
 
 .modal-header {
@@ -357,11 +363,12 @@ main p {
     background-color: var(--bar-color);
     padding-top: 0%;
     padding-bottom: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.modal-content {
-    background-color: var(--main-color);
-    border: 0.5px solid var(--font-color);
+#form-box {
+    text-align: center;
 }
 
 .p-5 {
@@ -413,10 +420,6 @@ main p {
         margin-left: 0%;
         margin-right: 0%;
     } 
-    .carousel {
-        width: 350px;
-        height: 350px;
-    }
 }
 
 /*Below is the styling for the footer and its contents.*/
