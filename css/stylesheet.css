@@ -374,6 +374,16 @@ main h4 {
     margin-left: 0%;
 }
 
+.carousel-caption {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.carousel-indicators {
+    position: static;
+    margin-bottom: 0%;
+}
+
 .carousel-indicators [data-bs-target] {
     background-color: var(--font-color);
 }
