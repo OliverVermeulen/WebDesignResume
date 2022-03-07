@@ -92,7 +92,7 @@ h4 {
 header {
     background-color: var(--bar-color);
     color: var(--heading-color);
-    padding: 5px;
+    padding: 20px;
     width: auto;
     height: auto;
     align-items: center;
@@ -135,7 +135,7 @@ header {
 }
 
 /*Mobile scaling*/
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
     header {
         background-image: var(--picture-color);
         background-size: cover;
@@ -156,10 +156,45 @@ header {
     }
 }
 /*Screen / Tablet scaling*/
-@media only screen and (max-width: 1500px) {
+/*@media only screen and (max-width: 1500px) {
     header {
         background-image: var(--picture-color);
         background-size: cover;
+        padding: 5px;
+    }
+}*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    header {
+        background-image: var(--picture-color);
+        background-size: cover;
+        flex-direction: column;
+    }
+    #name h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #name h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #contact h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {}
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+    header {
+        background-image: var(--picture-color);
+        background-size: cover;
+        padding: 5px;
     }
 }
 
@@ -517,4 +552,10 @@ footer ul li:nth-child(3) a:before {
 /*Screen / Tablet scaling*/
 @media only screen and (max-width: 1500px) {
 
+}
+
+#card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
