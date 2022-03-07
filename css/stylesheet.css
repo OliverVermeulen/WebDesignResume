@@ -461,9 +461,9 @@ footer ul li:nth-child(3) a:before {
 
 }
 
-#reach-me-2 {
+/*#reach-me-2 {
     background-color: #0072b1;
-}
+}*/
 
 #reach-me-2 ul {
     display: flex;
@@ -485,13 +485,13 @@ footer ul li:nth-child(3) a:before {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    border: 3px solid var(--heading-color);
+    border: 3px solid var(--font-color);
     z-index: 1;
 }
 
 #reach-me-2 ul li a .icon {
     position: relative;
-    color: var(--heading-color);
+    color: var(--font-color);
     transition: .5s;
     z-index: 3;
 }
