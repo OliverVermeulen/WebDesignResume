@@ -279,8 +279,6 @@ input:checked + .slider:before {
 main {
     width: auto;
     height: auto;
-    margin-left: 450px;
-    margin-right: 450px;
 }
 
 main [href] {
