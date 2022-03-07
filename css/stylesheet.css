@@ -175,9 +175,15 @@ nav {
     color: var(--link-color);
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--link-color);
+    opacity: 85%;
+}
+
 .navbar-light .navbar-toggler-icon {
     background-image: url(../images/menu-icon.png);
     filter: var(--icon-color);
+    align-items: center;
 }
 
 .navbar-light .navbar-toggler {
@@ -187,40 +193,6 @@ nav {
 
 .nav-link {
     padding: 0%;
-}
-
-.modal-content {
-    background-color: var(--main-color);
-    border: 0.5px solid var(--font-color);
-    border-radius: 20px;
-}
-
-.modal-header {
-    border-bottom: transparent;
-    background-color: var(--bar-color);
-    padding-top: 0%;
-    padding-bottom: 0%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#form-box {
-    text-align: center;
-}
-
-.p-5 {
-    padding: 0% !important;
-}
-
-.btn-primary {
-    color: var(--font-color);
-    background-color: var(--bar-color);
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: var(--bar-color);
-    text-decoration: underline;
 }
 
 .theme-switch-wrapper {
@@ -298,6 +270,9 @@ input:checked + .slider:before {
     li h3 {
         text-align: left;
     }
+    .navbar-light .navbar-nav .nav-link:hover {
+        opacity: 100%;
+    }
 }
 /*Screen / Tablet scaling*/
 @media only screen and (max-width: 1199.98px) {
@@ -320,6 +295,11 @@ main [href] {
     color: var(--link-color);
     text-decoration: underline;
     background: transparent;
+}
+
+main [href]:hover {
+    color: var(--link-color);
+    opacity: 85%;
 }
 
 main h4 {
@@ -345,18 +325,6 @@ main h4 {
     padding-right: 0%;
 }
 
-#project-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.carousel {
-    width: 450px;
-    height: 450px;
-    margin-bottom: 16px;
-}
-
 #card-box {
     display: flex;
     flex-direction: row;
@@ -376,12 +344,38 @@ main h4 {
     text-align: center;
 }
 
+.card h4:hover {
+    color: var(--link-color);
+    opacity: 85%;
+}
+
 .card a {
     color: var(--link-color);
 }
 
 .card img {
     filter: grayscale(100%);
+}
+
+#project-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carousel {
+    text-align: center;
+    width: 350px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.carousel h4 {
+    margin-left: 0%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--font-color);
 }
 
 .carousel-item i {
@@ -391,11 +385,11 @@ main h4 {
   
 [class^="fa-"], [class*=" fa-"] {
     display: inline-block;
-    width: 100%;
+
 }
 
 .carousel-caption {
-    position:static;
+    position: static;
     color: var(--font-color);
 }
 
@@ -414,7 +408,7 @@ main h4 {
     #introduction p {
         margin-left: 0%;
     }
-    [href]:hover {
+    main [href]:hover {
         opacity: 100%;
     }
     #card-box {
@@ -424,9 +418,12 @@ main h4 {
     .card {
         margin-bottom: 10px;
     }
+    .card h4:hover {
+        opacity: 100%;
+    }
     .carousel {
         width: 350px;
-        height: 350px;
+        height: 200px;
     }
 }
 /*Screen / Tablet scaling*/
