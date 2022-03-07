@@ -40,7 +40,7 @@
     </header>
 
     <!--The section below contains a navigation menu and a button that changes the sites theme.-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -54,12 +54,10 @@
             <li class="nav-item"><a class="nav-link" href="#projects"><h3>Projects</h3></a></li>
             <li class="nav-item"><a class="nav-link" href="#reach-me"><h3>Reach Me</h3></a></li>
             <li class="nav-item">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" onclick="toggleTheme()"/>
-                  <div class="slider round"></div>
-                </label>
-              </div>
+                <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
             </li>
           </ul>
         </div>

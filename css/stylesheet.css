@@ -165,8 +165,8 @@ header {
 
 
 /*Below is the styling for my navbar and toggle switch.*/
-.bg-light {
-    background-color: var(--bar-color) !important;
+nav {
+    background-color: var(--bar-color);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -192,37 +192,45 @@ header {
     align-items: center;
 }
 
-.theme-switch {
-    display: inline-block;
-    height: 34px;
+.switch {
     position: relative;
+    display: inline-block;
     width: 60px;
+    height: 34px;
 }
 
-.theme-switch input {
-    display:none;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-    background-color: var(--link-color);
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
     position: absolute;
-    right: 0;
+    cursor: pointer;
     top: 0;
-    transition: .4s;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--link-color);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .slider:before {
-    background-color: var(--bar-color);
-    bottom: 4px;
+    position: absolute;
     content: "";
     height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
     width: 26px;
+    left: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: var(--bar-color) url(../images/moon-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 input:checked + .slider {
@@ -230,15 +238,22 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
     transform: translateX(26px);
+    background: var(--bar-color) url(../images/sun-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider.round {
     border-radius: 34px;
 }
+
 .slider.round:before {
     border-radius: 50%;
 }
+
 
 /*Mobile scaling*/
 @media only screen and (max-width: 600px) {
@@ -395,7 +410,7 @@ main p {
         margin-left: 0%;
         margin-right: 0%;
     }
-    .content h2, h3, h4{
+    .content h2, h3, h4 {
         text-align: center;
     }
     .content p {
