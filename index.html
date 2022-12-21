@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content="My personal CV"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="My personal CV" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Oliver Vermeulen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e4ad388285.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   </head>
 
@@ -17,26 +31,39 @@
     <header>
       <div id="headshot">
         <picture>
-          <source media="(max-width: 600px)" srcset="./images/oliver-profile-headshot-small.png"/>
-          <source media="(max-width: 1000px)" srcset="./images/oliver-profile-headshot-medium.png"/>
-          <source srcset="./images/oliver-profile-headshot.jpg"/>
-          <img class="profile-headshot" src="./images/oliver-profile-headshot.jpg" alt="Oliver's profile photo"/>
+          <source
+            media="(max-width: 600px)"
+            srcset="./images/oliver-profile-headshot-small.png"
+          />
+          <source
+            media="(max-width: 1000px)"
+            srcset="./images/oliver-profile-headshot-medium.png"
+          />
+          <source srcset="./images/oliver-profile-headshot.jpg" />
+          <img
+            class="profile-headshot"
+            src="./images/oliver-profile-headshot.jpg"
+            alt="Oliver's profile photo"
+          />
         </picture>
       </div>
 
       <div id="name">
         <h1 class="display-1">Oliver Vermeulen</h1>
-        <h2 class="display-3">Software Engineer</h2>
+        <h2 class="display-3">Web Developer</h2>
       </div>
 
       <div id="contact">
         <h2 class="display-3">Contact:</h2>
         <ul class="list-unstyled">
-          <li><address><img class="contact-icons" src="./images/email-icon.png" alt="Email icon"/>oliververmeulen 862@gmail.com</address></li>
+          <li class="contact-item">
+            <i class="fa fa-envelope" class="contact-icons"></i>oliververmeulen
+            862@gmail.com
+          </li>
 
-          <li><address><img class="contact-icons" src="./images/location-icon.png" alt="Location icon"/>Riversdale, South Africa, 6670</address></li>
-
-          <li><address><img class="contact-icons" src="./images/phone-icon.png" alt="Phone icon"/>(+27) 83 410 5243</address></li>
+          <li class="contact-item">
+            <i class="fa fa-phone" class="contact-icons"></i>(+27) 83 410 5243
+          </li>
         </ul>
       </div>
     </header>
@@ -44,78 +71,47 @@
     <!--The section below contains a navigation menu and a button that changes the sites theme.-->
     <nav class="navbar navbar-lightnavbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#introduction"><h3>Introduction</h3></a></li>
-
-            <li class="nav-item"><a class="nav-link" href="#education"><h3>Education</h3></a></li>
-
-            <li class="nav-item"><a class="nav-link" href="#experience"><h3>Experience</h3></a></li>
-
-            <li class="nav-item"><a class="nav-link" href="#stats"><h3>Stats</h3></a></li>
-
-            <li class="nav-item"><a class="nav-link" href="#projects"><h3>Projects</h3></a></li>
-
-            <li class="nav-item"><a class="nav-link" href="#tech-stack"><h3>Tech Stack</h3></a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#introduction"><h3>Introduction</h3></a>
+            </li>
 
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <h3>Reach me</h3>
-              </a>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h2 class="modal-title" id="exampleModalLabel">Email Me</h2>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+              <a class="nav-link" href="#education"><h3>Education</h3></a>
+            </li>
 
-                    <div class="modal-body">
-                      <form class="form-section p-5" id="contact-section">
-                        <div class="w-100 mx-auto">
-                          <form action="post">
-                            <div class="form-group row">
-                              <div class="col-md-6 p-2">
-                                <input type="text" class="form-control" placeholder="Name"/>
-                              </div>
-                              <div class="col-md-6 p-2">
-                                <input type="email" class="form-control" placeholder="Email"/>
-                              </div>
-                            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience"><h3>Experience</h3></a>
+            </li>
 
-                            <div class="form-group row">
-                              <div class="col-md-12 p-2">
-                                <input type="text" class="form-control" placeholder="Subject"/>
-                              </div>
-                            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#stats"><h3>Stats</h3></a>
+            </li>
 
-                            <div class="form-group row">
-                              <div class="col-md-12 p-2">
-                                <textarea class="form-control" rows="3" placeholder="Type your message"></textarea>
-                              </div>
-                            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><h3>Projects</h3></a>
+            </li>
 
-                            <div class="form-group row">
-                              <div class="col-md-12 text-center p-2">
-                                <button type="submit" class="btn btn-primary button-colour">Send Message</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech-stack"><h3>Tech Stack</h3></a>
             </li>
 
             <li class="nav-item">
               <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider"/>
+                <input type="checkbox" onchange="toggleTheme()" id="slider" />
                 <span class="slider round"></span>
               </label>
             </li>
@@ -128,28 +124,115 @@
     <main class="container">
       <section class="content" id="introduction">
         <h2>Introduction:</h2>
-        <p>Aspiring Software Engineer with an eye for detail. Equally comfortable with teamwork and working by myself. Looking for a diverse workplace with lots opportunities for growth and creativity. Always willing to learn new technologies, and I own at least five Hawaiian shirts at any given time.</p>
+        <p>
+          I'm a hardworking, goal-oriented Junior Web Developer. I'm very
+          enthusiastic about Front-end Engineering, but I enjoy working on Full
+          Stack projects as well. I'm always eager to learn more about Software
+          Development and to improve my own skills. I'm currently using HTML,
+          CSS, JavaScript and React for Web Development but I'm also comfortable
+          with using PHP and MySQL. I'm passionate about contributing to open
+          source and making visually intuitive and user friendly web
+          applications.
+        </p>
       </section>
 
       <section class="content" id="education">
         <h2>Education:</h2>
-        <h3><a href="https://www.codespace.co.za/" target="_blank">CodeSpace</a> - Current</h3>
-        <h4>Intro to Web certificate</h4>
-        <p>With this certificate I learnt the essential languages needed to create basic websites. I used modern HTML5 elements to build up a website and to give it structure. I employed Cascading Style Sheets (CSS) to display my site as a well-designed final product making use of images, fonts and colours.</p>
+        <h3>
+          <a href="https://www.codespace.co.za/" target="_blank">CodeSpace</a> -
+          Software Development Certificate
+        </h3>
+        <h4>Jan 2022 - Nov 2022</h4>
 
-        <h3><a href="https://www.codecademy.com/" target="_blank">Codecademy</a> - 2021</h3>
-        <h4>Learn JavaScript certificate</h4>
-        <p>For this certificate, I learned how to use JavaScript programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax, and learnt to use its many elements; including Bash terminals and node.js to create small projects.</p>
+        <h4>Intro to web:</h4>
+        <p>
+          This course introduced me to web development. I learned how to create
+          basic websites by structuring them with HTML elements, adding links
+          and graphics to web pages, and styling them with CSS.
+        </p>
+        <h4>Web Design:</h4>
+        <p>
+          In this course, I learned how to create more sophisticated web pages
+          using various new design strategies. I was introduced to the important
+          concept of responsive design and templating by learning the CSS
+          framework Bootstrap.
+        </p>
+        <h4>Interactive Web Apps:</h4>
+        <p>
+          In this course, I learned how to use JavaScript to transform static
+          web pages into more interactive experiences. I learned the
+          fundamentals of JavaScript as well as learning how to manipulate data
+          and to make it persist.
+        </p>
+        <h4>Front-end Frameworks:</h4>
+        <p>
+          This course taught me about front-end frameworks and how to use them
+          to simplify and improve JavaScript. I learned how to use the versatile
+          Vue.js framework to create more powerful web applications.
+        </p>
+        <h4>Back-end Programming:</h4>
+        <p>
+          In this course I learned how to use the back-end programming language
+          PHP. I learned about the fundamentals of PHP like using session
+          storage to retrieve data. I also learned how to use the dependency
+          manager Composer to install libraries into my projects.
+        </p>
+        <h4>Databases:</h4>
+        <p>
+          This course helped me to better my understanding of databases. I
+          learned how to use the popular database management system MySQL. I
+          learned how to create and manipulate databases and tables. I also
+          learned how to connect databases to PHP remotely and how to manipulate
+          data using CRUD operations.
+        </p>
+        <h4>Dynamic Web Apps:</h4>
+        <p>
+          In this course I learned to separate the front-end from the back-end
+          as two separate components and to set up data endpoints to send and
+          and receive data between the two using NPM Axios to create Fullstack
+          applications.
+        </p>
 
-        <h4>Learn HTML certificate</h4>
-        <p>During this course I learned how to use HTML5, including all the common HTML tags and how to create HTML tables to present tabular data efficiently. I completed quizzes based on this and I received a certificate of completion.</p>
+        <h3>
+          <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> -
+          Certificates for HTML and Javascript
+        </h3>
+        <h4>Jan 2021 - Jul 2021</h4>
+        <h4>Learn JavaScript course</h4>
+        <p>
+          For this certificate, I learned how to use JavaScript programming
+          fundamentals and basic object-oriented concepts using the latest
+          JavaScript syntax, and learnt to use its many elements; including Bash
+          terminals and node.js to create small projects.
+        </p>
 
-        <h3><a href="https://langenhovenhs.co.za/" target="_blank">Langenhoven High School</a> - 2016-2020</h3>
-        <h4>National Senior Certificate</h4>
+        <h4>Learn HTML course</h4>
+        <p>
+          During this course I learned how to use HTML5, including all the
+          common HTML tags and how to create HTML tables to present tabular data
+          efficiently. I completed quizzes based on this and I received a
+          certificate of completion.
+        </p>
+
+        <h3>
+          <a href="https://langenhovenhs.co.za/" target="_blank"
+            >Langenhoven High School</a
+          >
+          - National Senior Certificate
+        </h3>
+        <h4>Jan 2016 - Dec 2020</h4>
         <ul>
-          <li>From 2016 to 2020 I attended Langenhoven High School in Riversdale and after matriculating in 2020 I received my National Senior Certificate.</li>
+          <li>
+            From 2016 to 2020 I attended Langenhoven High School in Riversdale
+            and after matriculating in 2020 I received my National Senior
+            Certificate.
+          </li>
 
-          <li>Relevant subjects: CAT(Computer Applications and Technology), EGD(Engineering Graphics and Design), Mathematical Literacy, English and Afrikaans.</li>
+          <li>
+            Relevant subjects: CAT(Computer Applications and Technology),
+            EGD(Engineering Graphics and Design), Mathematical Literacy, English
+            and Afrikaans.
+          </li>
 
           <li>Received a distinction for Mathematical Literacy.</li>
         </ul>
@@ -159,8 +242,9 @@
         <h2>Experience:</h2>
         <h3>Individual project contributor on Github</h3>
         <ul>
-          <li>Took part in Hacktoberfest 2020 and 2021</li>
+          <li>Took part in Hacktoberfest 2020 - 2022</li>
           <li>Helped on the Covid-19 expenditure report in 2020</li>
+          <li>Contributed to cultofthepartyparrot.com</li>
           <li>Contributed on several smaller projects</li>
           <li>Furthering the cause for open source code</li>
         </ul>
@@ -217,69 +301,56 @@
         <h2>Projects</h2>
         <div id="card-box">
           <div class="card" style="width: 18rem">
-            <img src="./images/vine-vibe.jfif" class="card-img-top" alt="Vine Vibe"/>
+            <img
+              src="./images/vine-vibe.jfif"
+              class="card-img-top"
+              alt="Vine Vibe"
+            />
             <div class="card-body">
               <h3 class="card-title">Vine Vibe</h3>
-              <p class="card-text">✨ 🍷 We decided to create a virtual wine cellar where we could virtually store all of the wines we loved, and hoard all of the ones we hadn't tried yet! 🍷 ✨</p>
-              <a href="https://github.com/VineVibe" target="_blank"><h4>See project</h4></a>
+              <p class="card-text">
+                ✨ 🍷 We decided to create a virtual wine cellar where we could
+                virtually store all of the wines we loved, and hoard all of the
+                ones we hadn't tried yet! 🍷 ✨
+              </p>
+              <a href="https://github.com/VineVibe" target="_blank"
+                ><h4>See project</h4></a
+              >
             </div>
           </div>
 
           <div class="card" style="width: 18rem">
-            <img src="./images/keep-the-receipts.png" class="card-img-top" alt="Keep the Receipts"/>
+            <img
+              src="./images/keep-the-receipts.png"
+              class="card-img-top"
+              alt="Keep the Receipts"
+            />
             <div class="card-body">
               <h3 class="card-title">Keep the receipts</h3>
-              <p class="card-text">🔎 💰 Data on government contracting and purchasing - who the government pays for goods and services, and how much. 🔎 💰</p>
-              <a href="https://github.com/keep-the-receipts" target="_blank"><h4>See project</h4></a>
+              <p class="card-text">
+                🔎 💰 Data on government contracting and purchasing - who the
+                government pays for goods and services, and how much. 🔎 💰
+              </p>
+              <a href="https://github.com/keep-the-receipts" target="_blank"
+                ><h4>See project</h4></a
+              >
             </div>
           </div>
 
           <div class="card" style="width: 18rem">
-            <img src="./images/jpass.jpg" class="card-img-top" alt="JPaas"/>
+            <img
+              src="./images/cultofthepartyparrot.jpg"
+              class="card-img-top"
+              alt="JPaas"
+            />
             <div class="card-body">
-              <h3 class="card-title">JPaas</h3>
-              <p class="card-text">🧢 🎤 Jack Parow proverbs for any occasion. 🧢 🎤</p>
-              <p class="card-text">Coming soon...</p>
-              <a href="https://github.com/naartjie/jbaas" target="_blank"><h4>See project</h4></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content" id="tech-stack">
-        <h2>Tech stack</h2>
-        <div id="project-box">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <i class="fab fa-html5 icon fa-10x"></i>
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>HTML5</h4>
-                  <p>Building</p>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <i class="fab fa-css3 icon fa-10x"></i>
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>CSS3</h4>
-                  <p>Styling</p>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <i class="fab fa-js icon fa-10x"></i>
-                <div class="carousel-caption d-none d-md-block">
-                  <h4>JavaScript</h4>
-                  <p>Bootstrap implementation</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <h3 class="card-title">cultofthepartyparrot.com</h3>
+              <p class="card-text">PARTY OR DIE</p>
+              <a
+                href="https://github.com/jmhobbs/cultofthepartyparrot.com"
+                target="_blank"
+                ><h4>See project</h4></a
+              >
             </div>
           </div>
         </div>
@@ -290,16 +361,26 @@
     <footer>
       <h2>Connect:</h2>
       <ul class="list-unstyled">
-        <li><a href="https://www.instagram.com/oliver.vermeulen/" target="_blank"><i class="fab fa-instagram icon" alt="Oliver's Instagram"></i></a></li>
+        <li>
+          <a href="https://www.instagram.com/oliver.vermeulen/" target="_blank"
+            ><i class="fab fa-instagram icon" alt="Instagram"></i
+          ></a>
+        </li>
 
-        <li><a href="https://github.com/OliverVermeulen" target="_blank"><i class="fab fa-github icon" alt="Oliver's GitHub"></i></a></li>
+        <li>
+          <a href="https://github.com/OliverVermeulen" target="_blank"
+            ><i class="fab fa-github icon" alt="GitHub"></i
+          ></a>
+        </li>
 
-        <li><a href="https://www.linkedin.com/in/oliver-vermeulen-311221222/" target="_blank"><i class="fab fa-linkedin-in icon" alt="Oliver's Linkedin"></i></a>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/oliver-vermeulen-311221222/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in icon" alt="Linkedin"></i
+          ></a>
         </li>
       </ul>
     </footer>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  <script src="./script/localstorage.js"></script>
 </html>
